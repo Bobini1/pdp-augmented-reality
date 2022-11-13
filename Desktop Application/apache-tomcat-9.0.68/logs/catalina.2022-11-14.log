@@ -1,0 +1,105 @@
+14-Nov-2022 00:04:20.980 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+14-Nov-2022 00:04:20.982 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+14-Nov-2022 00:04:20.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+14-Nov-2022 00:04:20.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+14-Nov-2022 00:04:20.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+14-Nov-2022 00:04:20.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Nov-2022 00:04:20.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17
+14-Nov-2022 00:04:20.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17+35-LTS-2724
+14-Nov-2022 00:04:20.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Nov-2022 00:04:20.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68
+14-Nov-2022 00:04:20.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68
+14-Nov-2022 00:04:20.990 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+14-Nov-2022 00:04:20.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+14-Nov-2022 00:04:20.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+14-Nov-2022 00:04:20.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+14-Nov-2022 00:04:20.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-Nov-2022 00:04:20.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\conf\logging.properties
+14-Nov-2022 00:04:20.991 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Nov-2022 00:04:20.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-Nov-2022 00:04:20.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Nov-2022 00:04:20.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+14-Nov-2022 00:04:20.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68
+14-Nov-2022 00:04:20.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68
+14-Nov-2022 00:04:20.992 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\temp
+14-Nov-2022 00:04:20.995 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+14-Nov-2022 00:04:20.996 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+14-Nov-2022 00:04:20.997 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+14-Nov-2022 00:04:21.000 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+14-Nov-2022 00:04:21.151 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+14-Nov-2022 00:04:21.165 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [306] milliseconds
+14-Nov-2022 00:04:21.203 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-Nov-2022 00:04:21.203 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+14-Nov-2022 00:04:21.214 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\engiee.war]
+14-Nov-2022 00:04:21.226 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\engiee] was found with a last modified time that did not match the associated WAR. It will be deleted.
+14-Nov-2022 00:04:21.313 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+14-Nov-2022 00:04:21.475 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\engiee.war] has finished in [261] ms
+14-Nov-2022 00:04:21.476 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\docs]
+14-Nov-2022 00:04:21.499 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\docs] has finished in [23] ms
+14-Nov-2022 00:04:21.499 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\examples]
+14-Nov-2022 00:04:21.819 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\examples] has finished in [320] ms
+14-Nov-2022 00:04:21.820 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\host-manager]
+14-Nov-2022 00:04:21.856 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\host-manager] has finished in [36] ms
+14-Nov-2022 00:04:21.857 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\manager]
+14-Nov-2022 00:04:21.893 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\manager] has finished in [36] ms
+14-Nov-2022 00:04:21.893 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\ROOT]
+14-Nov-2022 00:04:21.914 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\ROOT] has finished in [21] ms
+14-Nov-2022 00:04:21.916 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+14-Nov-2022 00:04:21.951 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [785] milliseconds
+14-Nov-2022 00:05:23.682 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+14-Nov-2022 00:05:23.682 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+14-Nov-2022 00:05:23.690 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+14-Nov-2022 00:05:23.708 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+14-Nov-2022 00:05:23.714 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+14-Nov-2022 00:05:43.408 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+14-Nov-2022 00:05:43.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+14-Nov-2022 00:05:43.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+14-Nov-2022 00:05:43.410 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+14-Nov-2022 00:05:43.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+14-Nov-2022 00:05:43.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+14-Nov-2022 00:05:43.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17
+14-Nov-2022 00:05:43.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17+35-LTS-2724
+14-Nov-2022 00:05:43.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+14-Nov-2022 00:05:43.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68
+14-Nov-2022 00:05:43.411 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68
+14-Nov-2022 00:05:43.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+14-Nov-2022 00:05:43.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+14-Nov-2022 00:05:43.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+14-Nov-2022 00:05:43.419 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+14-Nov-2022 00:05:43.419 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-Nov-2022 00:05:43.419 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\conf\logging.properties
+14-Nov-2022 00:05:43.419 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Nov-2022 00:05:43.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+14-Nov-2022 00:05:43.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Nov-2022 00:05:43.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+14-Nov-2022 00:05:43.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68
+14-Nov-2022 00:05:43.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68
+14-Nov-2022 00:05:43.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\temp
+14-Nov-2022 00:05:43.423 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+14-Nov-2022 00:05:43.423 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+14-Nov-2022 00:05:43.423 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+14-Nov-2022 00:05:43.426 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+14-Nov-2022 00:05:43.580 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+14-Nov-2022 00:05:43.596 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [311] milliseconds
+14-Nov-2022 00:05:43.633 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+14-Nov-2022 00:05:43.633 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+14-Nov-2022 00:05:43.644 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\engiee.war]
+14-Nov-2022 00:05:43.735 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+14-Nov-2022 00:05:43.889 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\engiee.war] has finished in [245] ms
+14-Nov-2022 00:05:43.890 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\docs]
+14-Nov-2022 00:05:43.913 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\docs] has finished in [23] ms
+14-Nov-2022 00:05:43.914 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\examples]
+14-Nov-2022 00:05:44.225 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\examples] has finished in [311] ms
+14-Nov-2022 00:05:44.226 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\host-manager]
+14-Nov-2022 00:05:44.261 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\host-manager] has finished in [36] ms
+14-Nov-2022 00:05:44.261 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\manager]
+14-Nov-2022 00:05:44.307 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\manager] has finished in [46] ms
+14-Nov-2022 00:05:44.308 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\ROOT]
+14-Nov-2022 00:05:44.328 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\IdeaProjects\apache-tomcat-9.0.68-windows-x64\apache-tomcat-9.0.68\webapps\ROOT] has finished in [20] ms
+14-Nov-2022 00:05:44.330 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+14-Nov-2022 00:05:44.365 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [768] milliseconds
+14-Nov-2022 00:07:38.184 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+14-Nov-2022 00:07:38.185 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+14-Nov-2022 00:07:38.193 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+14-Nov-2022 00:07:38.208 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+14-Nov-2022 00:07:38.230 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
