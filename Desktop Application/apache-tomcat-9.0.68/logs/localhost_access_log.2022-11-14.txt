@@ -19,3 +19,10 @@
 127.0.0.1 - - [14/Nov/2022:00:06:49 +0100] "GET /engiee HTTP/1.1" 302 -
 127.0.0.1 - - [14/Nov/2022:00:06:49 +0100] "GET /engiee/session.js?reload=true HTTP/1.1" 304 -
 127.0.0.1 - - [14/Nov/2022:00:06:49 +0100] "GET /engiee/server HTTP/1.1" 101 -
+127.0.0.1 - - [14/Nov/2022:16:34:41 +0100] "GET /engiee HTTP/1.1" 302 -
+127.0.0.1 - - [14/Nov/2022:16:34:41 +0100] "GET /engiee/ HTTP/1.1" 200 797
+127.0.0.1 - - [14/Nov/2022:16:34:41 +0100] "GET /engiee/session.js?reload=true HTTP/1.1" 200 6077
+127.0.0.1 - - [14/Nov/2022:16:34:41 +0100] "GET /engiee/server HTTP/1.1" 101 -
+127.0.0.1 - - [14/Nov/2022:16:34:41 +0100] "GET /favicon.ico HTTP/1.1" 200 21630
+127.0.0.1 - - [14/Nov/2022:16:35:07 +0100] "GET /engiee HTTP/1.1" 302 -
+127.0.0.1 - - [14/Nov/2022:16:35:07 +0100] "GET /engiee/server HTTP/1.1" 101 -

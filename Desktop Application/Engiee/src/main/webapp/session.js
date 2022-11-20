@@ -83,18 +83,25 @@ function preparePeerConnection() {
  * Display my local webcam & audio on UI.
  */
 async function displayLocalStreamAndSignal(firstTime) {
-    const localVideo = document.getElementById('localVideo');
+    const localCameraVideo = document.getElementById('localCameraVideo');
+    const localScreenVideo = document.getElementById('localScreenVideo');
     let localStream;
     try {
         // Capture local video & audio stream & set to local <video> DOM
         // element
-        const stream = await navigator.mediaDevices.getUserMedia({
+        const cameraStream = await navigator.mediaDevices.getUserMedia({
             audio: true,
             video: true
         });
-        localVideo.srcObject = stream;
-        localStream = stream;
-        logVideoAudioTrackInfo(localStream);
+        const screenStream = await navigator.mediaDevices.getDisplayMedia({
+            audio: true,
+            video: true
+        });
+        localCameraVideo.srcObject = cameraStream;
+        localScreenVideo.srcObject = screenStream;
+        localStream = cameraStream;
+        logVideoAudioTrackInfo(cameraStream);
+        logVideoAudioTrackInfo(screenStream);
 
         // For first time, add local stream to peer connection.
         if (firstTime) {
@@ -128,9 +135,9 @@ async function addLocalStreamToPeerConnection(localStream) {
  * Display remote webcam & audio in UI.
  */
 function displayRemoteStream(e) {
-    const remoteVideo = document.getElementById('remoteVideo');
-    if (remoteVideo.srcObject !== e.streams[0]) {
-        remoteVideo.srcObject = e.streams[0];
+    const remoteCameraVideo = document.getElementById('remoteCameraVideo');
+    if (remoteCameraVideo.srcObject !== e.streams[0]) {
+        remoteCameraVideo.srcObject = e.streams[0];
     }
 }
 

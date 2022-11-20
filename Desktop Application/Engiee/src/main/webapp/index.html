@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>Team 4 video conference</title>
+  <meta charset="UTF-8">
+  <title>Engiee</title>
 </head>
 <body>
 <h1>
-  Web Conference
+  Engiee
 </h1>
 <div>
-  <h3 style="margin: 5px">Team mate</h3>
-  <video style="width: 50vh; height: 50vh;" id="remoteVideo"
+  <h3 style="margin: 5px">Remote camera</h3>
+  <video style="width: 50vh; height: 50vh;" id="remoteCameraVideo"
          poster="https://img.icons8.com/color/512/person-male.png" autoplay></video>
 </div>
 <div>
-  <h3 style="margin: 5px">You</h3>
-  <video style="width: auto; height: 20vh;" id="localVideo"
+  <h3 style="margin: 5px">Your camera</h3>
+  <video style="width: auto; height: 20vh;" id="localCameraVideo"
          poster="https://img.icons8.com/color/512/person-male.png" autoplay muted></video>
+</div>
+<div>
+  <h3 style="margin: 5px">Remote screen</h3>
+  <video style="width: auto; height: 20vh;" id="remoteScreenVideo"
+         poster="https://img.icons8.com/fluency/512/monitor.png" autoplay></video>
+</div>
+<div>
+  <h3 style="margin: 5px">Your screen</h3>
+  <video style="width: auto; height: 20vh;" id="localScreenVideo"
+         poster="https://img.icons8.com/fluency/512/monitor.png" autoplay muted></video>
 </div>
 <div>
   <button id="leaveButton">Disconnect</button>
