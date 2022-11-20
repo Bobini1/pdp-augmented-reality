@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [20/Nov/2022:21:47:03 +0100] "GET /engiee HTTP/1.1" 404 757
+0:0:0:0:0:0:0:1 - - [20/Nov/2022:21:47:08 +0100] "GET /engiee/screen HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [20/Nov/2022:21:47:08 +0100] "GET /engiee/screen/ HTTP/1.1" 200 708
+0:0:0:0:0:0:0:1 - - [20/Nov/2022:21:47:08 +0100] "GET /engiee/screen/session.js?reload=true HTTP/1.1" 200 6087
+0:0:0:0:0:0:0:1 - - [20/Nov/2022:21:47:08 +0100] "GET /engiee/screen/server HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [20/Nov/2022:21:47:36 +0100] "GET /engiee/screen HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [20/Nov/2022:21:47:36 +0100] "GET /engiee/screen/session.js?reload=true HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [20/Nov/2022:21:47:36 +0100] "GET /engiee/screen/server HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [20/Nov/2022:21:48:05 +0100] "GET /engiee/camera HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [20/Nov/2022:21:48:05 +0100] "GET /engiee/camera/ HTTP/1.1" 200 712
+0:0:0:0:0:0:0:1 - - [20/Nov/2022:21:48:05 +0100] "GET /engiee/camera/session.js?reload=true HTTP/1.1" 200 6084
+0:0:0:0:0:0:0:1 - - [20/Nov/2022:21:48:05 +0100] "GET /engiee/camera/server HTTP/1.1" 101 -
+0:0:0:0:0:0:0:1 - - [20/Nov/2022:21:48:21 +0100] "GET /engiee/camera HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [20/Nov/2022:21:48:21 +0100] "GET /engiee/camera/server HTTP/1.1" 101 -
