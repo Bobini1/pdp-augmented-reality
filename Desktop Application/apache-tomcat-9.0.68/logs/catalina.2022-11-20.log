@@ -53,3 +53,61 @@
 20-Nov-2022 21:51:20.765 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 20-Nov-2022 21:51:20.779 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 20-Nov-2022 21:51:20.798 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+20-Nov-2022 22:03:52.562 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+20-Nov-2022 22:03:52.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+20-Nov-2022 22:03:52.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+20-Nov-2022 22:03:52.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+20-Nov-2022 22:03:52.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+20-Nov-2022 22:03:52.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+20-Nov-2022 22:03:52.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17
+20-Nov-2022 22:03:52.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17+35-LTS-2724
+20-Nov-2022 22:03:52.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+20-Nov-2022 22:03:52.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+20-Nov-2022 22:03:52.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+20-Nov-2022 22:03:52.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+20-Nov-2022 22:03:52.573 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+20-Nov-2022 22:03:52.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+20-Nov-2022 22:03:52.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+20-Nov-2022 22:03:52.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+20-Nov-2022 22:03:52.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\conf\logging.properties
+20-Nov-2022 22:03:52.574 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+20-Nov-2022 22:03:52.575 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+20-Nov-2022 22:03:52.575 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+20-Nov-2022 22:03:52.575 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+20-Nov-2022 22:03:52.575 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+20-Nov-2022 22:03:52.575 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+20-Nov-2022 22:03:52.575 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\temp
+20-Nov-2022 22:03:52.578 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+20-Nov-2022 22:03:52.579 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+20-Nov-2022 22:03:52.579 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+20-Nov-2022 22:03:52.583 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+20-Nov-2022 22:03:52.739 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+20-Nov-2022 22:03:52.755 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [315] milliseconds
+20-Nov-2022 22:03:52.787 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+20-Nov-2022 22:03:52.787 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+20-Nov-2022 22:03:52.798 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war]
+20-Nov-2022 22:03:52.882 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+20-Nov-2022 22:03:53.036 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war] has finished in [238] ms
+20-Nov-2022 22:03:53.037 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war]
+20-Nov-2022 22:03:53.051 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+20-Nov-2022 22:03:53.075 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war] has finished in [38] ms
+20-Nov-2022 22:03:53.076 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war]
+20-Nov-2022 22:03:53.099 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+20-Nov-2022 22:03:53.119 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war] has finished in [42] ms
+20-Nov-2022 22:03:53.119 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs]
+20-Nov-2022 22:03:53.140 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs] has finished in [21] ms
+20-Nov-2022 22:03:53.141 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples]
+20-Nov-2022 22:03:53.477 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples] has finished in [336] ms
+20-Nov-2022 22:03:53.478 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager]
+20-Nov-2022 22:03:53.516 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager] has finished in [39] ms
+20-Nov-2022 22:03:53.516 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager]
+20-Nov-2022 22:03:53.554 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager] has finished in [37] ms
+20-Nov-2022 22:03:53.554 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT]
+20-Nov-2022 22:03:53.576 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT] has finished in [22] ms
+20-Nov-2022 22:03:53.578 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+20-Nov-2022 22:03:53.613 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [857] milliseconds
+20-Nov-2022 22:05:22.427 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+20-Nov-2022 22:05:22.428 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+20-Nov-2022 22:05:22.435 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+20-Nov-2022 22:05:22.450 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+20-Nov-2022 22:05:22.465 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
