@@ -1,19 +1,10 @@
 var peerConnection;
-const leaveButton = document.getElementById('leaveButton');
-leaveButton.addEventListener('click', leave);
-
-function leave() {
-    console.log('Disconnecting...');
-    peerConnection.close();
-    signalingWebsocket.close();
-    window.close()
-}
 
 /*
  * Prepare websocket for signaling server endpoint.
  */
 var signalingWebsocket = new WebSocket("ws://" + window.location.host +
-    "/engiee/screen/server");
+    "/engiee/phone/server");
 
 signalingWebsocket.onmessage = function(msg) {
     var signal = JSON.parse(msg.data);
@@ -83,7 +74,6 @@ function preparePeerConnection() {
  * Display my local webcam & audio on UI.
  */
 async function displayLocalStreamAndSignal(firstTime) {
-    const localVideo = document.getElementById('localVideo');
     let localStream;
     try {
         // Capture local video & audio stream & set to local <video> DOM
@@ -92,7 +82,6 @@ async function displayLocalStreamAndSignal(firstTime) {
             audio: true,
             video: false
         });
-        localVideo.srcObject = stream;
         localStream = stream;
         logVideoAudioTrackInfo(localStream);
 
@@ -108,7 +97,7 @@ async function displayLocalStreamAndSignal(firstTime) {
         sendOfferSignal();
 
     } catch (e) {
-        alert(`getUserMedia() error: ${e.name}`);
+        console.warn(`getUserMedia() error: ${e.name}`);
         throw e;
     }
     console.log('Start completed.');
@@ -128,9 +117,9 @@ async function addLocalStreamToPeerConnection(localStream) {
  * Display remote webcam & audio in UI.
  */
 function displayRemoteStream(e) {
-    const remoteVideo = document.getElementById('remoteVideo');
-    if (remoteVideo.srcObject !== e.streams[0]) {
-        remoteVideo.srcObject = e.streams[0];
+    const video = document.getElementById('video');
+    if (video.srcObject !== e.streams[0]) {
+        video.srcObject = e.streams[0];
     }
 }
 
@@ -144,7 +133,7 @@ function sendOfferSignal() {
         sendSignal(offer);
         peerConnection.setLocalDescription(offer);
     }, function(error) {
-        alert("Error creating an offer");
+        console.warn("Error creating an offer");
     });
 }
 
@@ -161,7 +150,7 @@ function handleOffer(offer) {
         peerConnection.setLocalDescription(answer);
         sendSignal(answer);
     }, function(error) {
-        alert("Error creating an answer");
+        console.warn("Error creating an answer");
     });
 
 }
