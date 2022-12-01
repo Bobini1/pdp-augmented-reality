@@ -83,6 +83,11 @@
          Either JSSE or OpenSSL style configuration may be used regardless of
          the SSLImplementation selected. JSSE style configuration is used below.
     -->
+<Connector SSLEnabled="true" acceptCount="100" clientAuth="false"
+disableUploadTimeout="true" enableLookups="false" maxThreads="25"
+port="8443" keystoreFile="C:/Users/Mateusz/.keystore" keystorePass="password"
+protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https"
+secure="true" sslProtocol="TLS" />
     <!--
     <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
                maxThreads="150" SSLEnabled="true">

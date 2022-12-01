@@ -3,7 +3,7 @@ var peerConnection;
 /*
  * Prepare websocket for signaling server endpoint.
  */
-var signalingWebsocket = new WebSocket("ws://" + window.location.host +
+var signalingWebsocket = new WebSocket("wss://" + window.location.host +
     "/engiee/screen/server");
 
 signalingWebsocket.onmessage = function(msg) {
