@@ -48,8 +48,9 @@ function draw() {
   noFill();
   
   translate(width / 2, height / 2);
+	textSize(32)
   if(!clicked)
-	  text("Click to start", -10, 0)
+	  text("Click to start", -32, 0)
   
   fft.analyze()
   amp = fft.getEnergy(20, 200);
