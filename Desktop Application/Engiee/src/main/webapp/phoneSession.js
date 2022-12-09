@@ -33,7 +33,7 @@ async function displayLocalPhone() {
 }
 
 function setup() {
-  let visualiserCanvas = createCanvas(1024, 1024);
+  let visualiserCanvas = createCanvas(800, 800);
   visualiserCanvas.parent("video-container");
   visualiserCanvas.id("video");
 
@@ -48,9 +48,10 @@ function draw() {
   noFill();
   
   translate(width / 2, height / 2);
-	textSize(32)
-  if(!clicked)
-	  text("Click to start", -32, 0)
+  textSize(32)
+  if(!clicked){
+  text("Click to start", -64, 0)
+  }
   
   fft.analyze()
   amp = fft.getEnergy(20, 200);
