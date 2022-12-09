@@ -11,8 +11,8 @@ function logVideoAudioTrackInfo(localStream) {
 
 const SAMPLES = 1024;
 const SAMPLING = 0.005;
-const MIN_CIRCLE = 256;
-const MAX_CIRCLE = 512;
+const MIN_CIRCLE = 200;
+const MAX_CIRCLE = 400;
 const AVG_CIRCLE = (MIN_CIRCLE + MAX_CIRCLE)/2
 
 var fft;
@@ -33,7 +33,7 @@ async function displayLocalPhone() {
 }
 
 function setup() {
-  let visualiserCanvas = createCanvas(800, 800);
+  let visualiserCanvas = createCanvas(1600, 800);
   visualiserCanvas.parent("video-container");
   visualiserCanvas.id("video");
 
@@ -48,9 +48,9 @@ function draw() {
   noFill();
   
   translate(width / 2, height / 2);
-  textSize(32)
-  if(!clicked){
-  text("Click to start", -64, 0)
+  textSize(32);
+  if(clicked === false){
+    text("Click to start", -64, 0);
   }
   
   fft.analyze()
