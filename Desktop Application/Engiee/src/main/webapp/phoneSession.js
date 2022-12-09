@@ -32,7 +32,9 @@ async function displayLocalPhone() {
 }
 
 function setup() {
-  createCanvas(1024, 1024);
+  let visualiserCanvas = createCanvas(1024, 1024);
+  visualiserCanvas.parent("video-container");
+  visualiserCanvas.id("video");
 
   fft = new p5.FFT(0.8, SAMPLES);
   displayLocalPhone()
@@ -84,10 +86,8 @@ function draw() {
 }
 
 function mousePressed(){
-  if (getAudioContext().state !== 'running') {
+  if (getAudioContext().state !== 'running')
     getAudioContext().resume();
-  }else
-	  getAudioContext().suspend();
 }
 
 class Particle{
