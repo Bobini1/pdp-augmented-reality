@@ -16,7 +16,8 @@ const MAX_CIRCLE = 512;
 const AVG_CIRCLE = (MIN_CIRCLE + MAX_CIRCLE)/2
 
 var fft;
-var particles = []
+var particles = [];
+var clicked = false;
 
 async function displayLocalPhone() {
     //const phoneVideo = document.getElementById("video");
@@ -47,6 +48,8 @@ function draw() {
   noFill();
   
   translate(width / 2, height / 2);
+  if(!clicked)
+	  text("Click to start", -10, 0)
   
   fft.analyze()
   amp = fft.getEnergy(20, 200);
@@ -86,8 +89,10 @@ function draw() {
 }
 
 function mousePressed(){
-  if (getAudioContext().state !== 'running')
+  if (getAudioContext().state !== 'running'){
     getAudioContext().resume();
+	  clicked = true;
+  }
 }
 
 class Particle{
