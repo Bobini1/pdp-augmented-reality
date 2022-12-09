@@ -1,0 +1,564 @@
+09-Dec-2022 11:22:35.932 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+09-Dec-2022 11:22:35.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+09-Dec-2022 11:22:35.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+09-Dec-2022 11:22:35.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+09-Dec-2022 11:22:35.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+09-Dec-2022 11:22:35.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+09-Dec-2022 11:22:35.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-19
+09-Dec-2022 11:22:35.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.1+10-21
+09-Dec-2022 11:22:35.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+09-Dec-2022 11:22:35.939 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+09-Dec-2022 11:22:35.942 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+09-Dec-2022 11:22:35.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-Dec-2022 11:22:35.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-Dec-2022 11:22:35.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+09-Dec-2022 11:22:35.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+09-Dec-2022 11:22:35.952 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Dec-2022 11:22:35.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\conf\logging.properties
+09-Dec-2022 11:22:35.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Dec-2022 11:22:35.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-Dec-2022 11:22:35.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-Dec-2022 11:22:35.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+09-Dec-2022 11:22:35.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+09-Dec-2022 11:22:35.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+09-Dec-2022 11:22:35.957 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\temp
+09-Dec-2022 11:22:35.967 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+09-Dec-2022 11:22:35.967 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+09-Dec-2022 11:22:35.967 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+09-Dec-2022 11:22:35.972 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+09-Dec-2022 11:22:36.317 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+09-Dec-2022 11:22:36.345 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-nio-8443"]
+09-Dec-2022 11:22:36.382 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8443]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1051)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1045)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.lang.IllegalArgumentException: Cannot obtain resource for specified location [C:/Users/Mateusz/.keystore]: no readable file, classloader resource, or this is not a resolvable URI
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:107)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:71)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:235)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:606)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1048)
+		... 11 more
+	Caused by: java.io.IOException: Cannot obtain resource for specified location [C:/Users/Mateusz/.keystore]: no readable file, classloader resource, or this is not a resolvable URI
+		at org.apache.catalina.startup.CatalinaBaseConfigurationSource.getResource(CatalinaBaseConfigurationSource.java:120)
+		at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:199)
+		at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:207)
+		at org.apache.tomcat.util.net.SSLUtilBase.getKeyManagers(SSLUtilBase.java:283)
+		at org.apache.tomcat.util.net.openssl.OpenSSLUtil.getKeyManagers(OpenSSLUtil.java:98)
+		at org.apache.tomcat.util.net.SSLUtilBase.createSSLContext(SSLUtilBase.java:247)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:105)
+		... 18 more
+	Caused by: java.net.MalformedURLException: unknown protocol: c
+		at java.base/java.net.URL.<init>(URL.java:682)
+		at java.base/java.net.URL.fromURI(URL.java:749)
+		at java.base/java.net.URI.toURL(URI.java:1136)
+		at org.apache.catalina.startup.CatalinaBaseConfigurationSource.getResource(CatalinaBaseConfigurationSource.java:117)
+		... 24 more
+09-Dec-2022 11:22:36.384 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [661] milliseconds
+09-Dec-2022 11:22:36.438 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-Dec-2022 11:22:36.438 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+09-Dec-2022 11:22:36.455 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war]
+09-Dec-2022 11:22:36.473 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera] was found with a last modified time that did not match the associated WAR. It will be deleted.
+09-Dec-2022 11:22:36.600 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+09-Dec-2022 11:22:36.792 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war] has finished in [337] ms
+09-Dec-2022 11:22:36.797 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war]
+09-Dec-2022 11:22:36.802 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone] was found with a last modified time that did not match the associated WAR. It will be deleted.
+09-Dec-2022 11:22:36.837 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+09-Dec-2022 11:22:36.873 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war] has finished in [76] ms
+09-Dec-2022 11:22:36.878 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war]
+09-Dec-2022 11:22:36.883 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen] was found with a last modified time that did not match the associated WAR. It will be deleted.
+09-Dec-2022 11:22:36.908 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+09-Dec-2022 11:22:36.939 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war] has finished in [59] ms
+09-Dec-2022 11:22:36.939 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war]
+09-Dec-2022 11:22:36.945 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee] was found with a last modified time that did not match the associated WAR. It will be deleted.
+09-Dec-2022 11:22:36.986 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+09-Dec-2022 11:22:37.000 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war] has finished in [61] ms
+09-Dec-2022 11:22:37.000 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs]
+09-Dec-2022 11:22:37.025 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs] has finished in [25] ms
+09-Dec-2022 11:22:37.025 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples]
+09-Dec-2022 11:22:38.631 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples] has finished in [1,606] ms
+09-Dec-2022 11:22:38.634 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager]
+09-Dec-2022 11:22:38.677 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager] has finished in [43] ms
+09-Dec-2022 11:22:38.677 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager]
+09-Dec-2022 11:22:38.729 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager] has finished in [52] ms
+09-Dec-2022 11:22:38.729 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT]
+09-Dec-2022 11:22:38.759 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT] has finished in [30] ms
+09-Dec-2022 11:22:38.764 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+09-Dec-2022 11:22:38.798 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2412] milliseconds
+09-Dec-2022 11:32:13.028 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+09-Dec-2022 11:32:13.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+09-Dec-2022 11:32:13.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+09-Dec-2022 11:32:13.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+09-Dec-2022 11:32:13.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+09-Dec-2022 11:32:13.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+09-Dec-2022 11:32:13.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-19
+09-Dec-2022 11:32:13.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.1+10-21
+09-Dec-2022 11:32:13.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+09-Dec-2022 11:32:13.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+09-Dec-2022 11:32:13.039 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+09-Dec-2022 11:32:13.054 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-Dec-2022 11:32:13.054 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-Dec-2022 11:32:13.056 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+09-Dec-2022 11:32:13.056 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+09-Dec-2022 11:32:13.056 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Dec-2022 11:32:13.056 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\conf\logging.properties
+09-Dec-2022 11:32:13.056 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Dec-2022 11:32:13.056 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-Dec-2022 11:32:13.059 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-Dec-2022 11:32:13.059 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+09-Dec-2022 11:32:13.059 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+09-Dec-2022 11:32:13.059 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+09-Dec-2022 11:32:13.059 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\temp
+09-Dec-2022 11:32:13.065 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+09-Dec-2022 11:32:13.065 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+09-Dec-2022 11:32:13.070 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+09-Dec-2022 11:32:13.075 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+09-Dec-2022 11:32:13.394 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+09-Dec-2022 11:32:13.420 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-nio-8443"]
+09-Dec-2022 11:32:13.598 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-nio-8443"]
+09-Dec-2022 11:32:13.598 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8443]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1051)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1045)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:275)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:606)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1048)
+		... 11 more
+09-Dec-2022 11:32:13.601 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [736] milliseconds
+09-Dec-2022 11:32:13.638 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-Dec-2022 11:32:13.639 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+09-Dec-2022 11:32:13.654 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war]
+09-Dec-2022 11:32:13.781 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+09-Dec-2022 11:32:13.943 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war] has finished in [284] ms
+09-Dec-2022 11:32:13.945 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war]
+09-Dec-2022 11:32:13.964 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+09-Dec-2022 11:32:13.994 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war] has finished in [49] ms
+09-Dec-2022 11:32:13.999 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war]
+09-Dec-2022 11:32:14.014 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+09-Dec-2022 11:32:14.041 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war] has finished in [42] ms
+09-Dec-2022 11:32:14.041 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war]
+09-Dec-2022 11:32:14.057 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+09-Dec-2022 11:32:14.070 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war] has finished in [29] ms
+09-Dec-2022 11:32:14.070 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs]
+09-Dec-2022 11:32:14.097 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs] has finished in [27] ms
+09-Dec-2022 11:32:14.097 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples]
+09-Dec-2022 11:32:14.486 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples] has finished in [389] ms
+09-Dec-2022 11:32:14.486 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager]
+09-Dec-2022 11:32:14.531 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager] has finished in [45] ms
+09-Dec-2022 11:32:14.531 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager]
+09-Dec-2022 11:32:14.577 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager] has finished in [46] ms
+09-Dec-2022 11:32:14.581 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT]
+09-Dec-2022 11:32:14.607 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT] has finished in [26] ms
+09-Dec-2022 11:32:14.613 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+09-Dec-2022 11:32:14.633 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-nio-8443"]
+09-Dec-2022 11:32:14.638 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1035] milliseconds
+09-Dec-2022 11:36:51.000 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+09-Dec-2022 11:36:51.003 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+09-Dec-2022 11:36:51.003 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+09-Dec-2022 11:36:51.003 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+09-Dec-2022 11:36:51.003 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+09-Dec-2022 11:36:51.003 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+09-Dec-2022 11:36:51.003 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-19
+09-Dec-2022 11:36:51.003 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           19.0.1+10-21
+09-Dec-2022 11:36:51.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+09-Dec-2022 11:36:51.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+09-Dec-2022 11:36:51.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+09-Dec-2022 11:36:51.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+09-Dec-2022 11:36:51.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+09-Dec-2022 11:36:51.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+09-Dec-2022 11:36:51.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+09-Dec-2022 11:36:51.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+09-Dec-2022 11:36:51.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\conf\logging.properties
+09-Dec-2022 11:36:51.019 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+09-Dec-2022 11:36:51.019 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+09-Dec-2022 11:36:51.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+09-Dec-2022 11:36:51.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+09-Dec-2022 11:36:51.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+09-Dec-2022 11:36:51.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+09-Dec-2022 11:36:51.021 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\temp
+09-Dec-2022 11:36:51.027 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+09-Dec-2022 11:36:51.031 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+09-Dec-2022 11:36:51.031 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+09-Dec-2022 11:36:51.036 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+09-Dec-2022 11:36:51.346 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+09-Dec-2022 11:36:51.362 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-nio-8443"]
+09-Dec-2022 11:36:51.529 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [705] milliseconds
+09-Dec-2022 11:36:51.571 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+09-Dec-2022 11:36:51.571 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+09-Dec-2022 11:36:51.587 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war]
+09-Dec-2022 11:36:51.701 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+09-Dec-2022 11:36:51.864 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war] has finished in [277] ms
+09-Dec-2022 11:36:51.867 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war]
+09-Dec-2022 11:36:51.884 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+09-Dec-2022 11:36:51.914 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war] has finished in [47] ms
+09-Dec-2022 11:36:51.914 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war]
+09-Dec-2022 11:36:51.931 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+09-Dec-2022 11:36:51.955 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war] has finished in [41] ms
+09-Dec-2022 11:36:51.955 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war]
+09-Dec-2022 11:36:51.970 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+09-Dec-2022 11:36:51.986 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war] has finished in [31] ms
+09-Dec-2022 11:36:51.986 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs]
+09-Dec-2022 11:36:52.011 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs] has finished in [25] ms
+09-Dec-2022 11:36:52.016 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples]
+09-Dec-2022 11:36:52.413 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples] has finished in [397] ms
+09-Dec-2022 11:36:52.413 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager]
+09-Dec-2022 11:36:52.458 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager] has finished in [45] ms
+09-Dec-2022 11:36:52.458 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager]
+09-Dec-2022 11:36:52.509 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager] has finished in [51] ms
+09-Dec-2022 11:36:52.509 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT]
+09-Dec-2022 11:36:52.536 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\Mateusz\Documents\Computer Science (2022 - 2023)\Professional Design Project\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT] has finished in [27] ms
+09-Dec-2022 11:36:52.540 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+09-Dec-2022 11:36:52.557 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-nio-8443"]
+09-Dec-2022 11:36:52.561 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1029] milliseconds
+09-Dec-2022 11:44:18.887 SEVERE [https-openssl-nio-8443-exec-4] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [com.team4.engieescreen.Server] and the following error occurred
+	java.io.IOException: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:327)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:262)
+		at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:824)
+		at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:747)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:367)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:296)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+	Caused by: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+		at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:136)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:101)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:57)
+		at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:542)
+		at org.apache.tomcat.util.net.SecureNioChannel.flush(SecureNioChannel.java:124)
+		at org.apache.tomcat.util.net.SecureNioChannel.write(SecureNioChannel.java:861)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1680)
+		at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1070)
+		at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1489)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1415)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1386)
+		at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:93)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:512)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+		... 19 more
+09-Dec-2022 11:44:25.071 SEVERE [https-openssl-nio-8443-exec-6] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [com.team4.engieescreen.Server] and the following error occurred
+	java.io.IOException: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:327)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:262)
+		at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:824)
+		at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:747)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:367)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:296)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+	Caused by: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+		at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:136)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:101)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:57)
+		at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:542)
+		at org.apache.tomcat.util.net.SecureNioChannel.flush(SecureNioChannel.java:124)
+		at org.apache.tomcat.util.net.SecureNioChannel.write(SecureNioChannel.java:861)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1680)
+		at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1070)
+		at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1489)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1415)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1386)
+		at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:93)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:512)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+		... 19 more
+09-Dec-2022 11:45:41.166 SEVERE [https-openssl-nio-8443-exec-1] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [com.team4.engieecamera.Server] and the following error occurred
+	java.io.IOException: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:327)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:262)
+		at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:824)
+		at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:747)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:367)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:296)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+	Caused by: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+		at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:136)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:101)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:57)
+		at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:542)
+		at org.apache.tomcat.util.net.SecureNioChannel.flush(SecureNioChannel.java:124)
+		at org.apache.tomcat.util.net.SecureNioChannel.write(SecureNioChannel.java:861)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1680)
+		at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1070)
+		at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1489)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1415)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1386)
+		at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:93)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:512)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+		... 19 more
+09-Dec-2022 11:45:41.166 SEVERE [https-openssl-nio-8443-exec-3] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [com.team4.engieecamera.Clicks] and the following error occurred
+	java.io.IOException: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:327)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:262)
+		at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:824)
+		at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:747)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:367)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:296)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+	Caused by: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+		at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:136)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:101)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:57)
+		at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:542)
+		at org.apache.tomcat.util.net.SecureNioChannel.flush(SecureNioChannel.java:124)
+		at org.apache.tomcat.util.net.SecureNioChannel.write(SecureNioChannel.java:861)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1680)
+		at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1070)
+		at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1489)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1415)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1386)
+		at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:93)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:512)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+		... 19 more
+09-Dec-2022 11:45:42.365 SEVERE [https-openssl-nio-8443-exec-4] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [com.team4.engieecamera.Server] and the following error occurred
+	java.io.IOException: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:327)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:262)
+		at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:824)
+		at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:747)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:367)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:296)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+	Caused by: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+		at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:136)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:101)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:57)
+		at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:542)
+		at org.apache.tomcat.util.net.SecureNioChannel.flush(SecureNioChannel.java:124)
+		at org.apache.tomcat.util.net.SecureNioChannel.write(SecureNioChannel.java:861)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1680)
+		at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1070)
+		at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1489)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1415)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1386)
+		at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:93)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:512)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+		... 19 more
+09-Dec-2022 11:45:42.365 SEVERE [https-openssl-nio-8443-exec-7] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [com.team4.engieecamera.Clicks] and the following error occurred
+	java.io.IOException: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:327)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:262)
+		at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:824)
+		at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:747)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:367)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:296)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+	Caused by: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+		at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:136)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:101)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:57)
+		at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:542)
+		at org.apache.tomcat.util.net.SecureNioChannel.flush(SecureNioChannel.java:124)
+		at org.apache.tomcat.util.net.SecureNioChannel.write(SecureNioChannel.java:861)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1680)
+		at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1070)
+		at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1489)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1415)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1386)
+		at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:93)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:512)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+		... 19 more
+09-Dec-2022 12:15:44.899 SEVERE [https-openssl-nio-8443-exec-2] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [com.team4.engieecamera.Server] and the following error occurred
+	java.io.IOException: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:327)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:262)
+		at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:824)
+		at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:747)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:367)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:296)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+	Caused by: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+		at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:136)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:101)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:57)
+		at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:542)
+		at org.apache.tomcat.util.net.SecureNioChannel.flush(SecureNioChannel.java:124)
+		at org.apache.tomcat.util.net.SecureNioChannel.write(SecureNioChannel.java:861)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1680)
+		at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1070)
+		at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1489)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1415)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1386)
+		at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:93)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:512)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+		... 19 more
+09-Dec-2022 12:15:44.899 SEVERE [https-openssl-nio-8443-exec-7] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [com.team4.engieecamera.Clicks] and the following error occurred
+	java.io.IOException: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:327)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:262)
+		at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:824)
+		at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:747)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:367)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:296)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1589)
+	Caused by: java.io.IOException: Nawiązane połączenie zostało przerwane przez oprogramowanie zainstalowane w komputerze-hoście
+		at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+		at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:136)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:101)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:57)
+		at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:542)
+		at org.apache.tomcat.util.net.SecureNioChannel.flush(SecureNioChannel.java:124)
+		at org.apache.tomcat.util.net.SecureNioChannel.write(SecureNioChannel.java:861)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1680)
+		at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1070)
+		at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1489)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1415)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1386)
+		at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:93)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:512)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+		... 19 more

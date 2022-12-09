@@ -16,7 +16,7 @@ b) create .keystore file with a use of the following command:
 keytool -genkey -alias tomcat -keyalg RSA
 c) answer the questions and remember the password you set because it will be used in step 2
 2. Configure server.xml
-a) paste the following code block in server.xml:
+a) paste/update the following code block in server.xml (if you don't see the code, open README in raw or blame format):
 <Connector SSLEnabled="true" acceptCount="100" clientAuth="false"
 disableUploadTimeout="true" enableLookups="false" maxThreads="25"
 port="8443" keystoreFile="C:/Users/your_username/.keystore" keystorePass="password_from_step1"
