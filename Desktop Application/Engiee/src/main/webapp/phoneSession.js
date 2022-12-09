@@ -17,7 +17,7 @@ const AVG_CIRCLE = (MIN_CIRCLE + MAX_CIRCLE)/2
 
 var fft;
 var particles = [];
-var clicked = false;
+var clicked = true;
 
 async function displayLocalPhone() {
     //const phoneVideo = document.getElementById("video");
@@ -36,6 +36,9 @@ function setup() {
   let visualiserCanvas = createCanvas(1600, 800);
   visualiserCanvas.parent("video-container");
   visualiserCanvas.id("video");
+	
+  if (getAudioContext().state !== 'running')
+    clicked = false;
 
   fft = new p5.FFT(0.8, SAMPLES);
   displayLocalPhone()
@@ -50,7 +53,7 @@ function draw() {
   translate(width / 2, height / 2);
   textSize(32);
   if(clicked === false){
-    text("Click to start", -80, 0);
+    text("Click to start", -85, 0);
   }
   
   fft.analyze()
