@@ -50,7 +50,7 @@ function draw() {
   translate(width / 2, height / 2);
   textSize(32);
   if(clicked === false){
-    text("Click to start", -64, 0);
+    text("Click to start", -80, 0);
   }
   
   fft.analyze()
@@ -92,9 +92,9 @@ function draw() {
 
 function mousePressed(){
   if (getAudioContext().state !== 'running'){
-    getAudioContext().resume();
-	  clicked = true;
+    getAudioContext().resume();  
   }
+  clicked = true;
 }
 
 class Particle{
