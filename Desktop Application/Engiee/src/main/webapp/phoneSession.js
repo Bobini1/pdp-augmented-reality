@@ -37,8 +37,9 @@ function setup() {
   visualiserCanvas.parent("video-container");
   visualiserCanvas.id("video");
 	
-  if (getAudioContext().state !== 'running')
+  if (getAudioContext().state !== 'running'){
     clicked = false;
+  }
 
   fft = new p5.FFT(0.8, SAMPLES);
   displayLocalPhone()
