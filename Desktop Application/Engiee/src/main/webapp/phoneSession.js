@@ -33,7 +33,7 @@ async function displayLocalPhone() {
 }
 
 function setup() {
-  let visualiserCanvas = createCanvas(1600, 800);
+  let visualiserCanvas = createCanvas(windowWidth, 800);
   visualiserCanvas.parent("video-container");
   visualiserCanvas.id("video");
 	
