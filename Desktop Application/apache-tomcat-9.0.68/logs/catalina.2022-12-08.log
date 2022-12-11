@@ -1,0 +1,375 @@
+08-Dec-2022 02:49:44.205 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+08-Dec-2022 02:49:44.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+08-Dec-2022 02:49:44.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+08-Dec-2022 02:49:44.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+08-Dec-2022 02:49:44.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Dec-2022 02:49:44.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-Dec-2022 02:49:44.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17.0.5
+08-Dec-2022 02:49:44.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+9-LTS-191
+08-Dec-2022 02:49:44.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Dec-2022 02:49:44.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 02:49:44.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 02:49:44.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Dec-2022 02:49:44.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Dec-2022 02:49:44.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Dec-2022 02:49:44.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Dec-2022 02:49:44.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Dec-2022 02:49:44.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\conf\logging.properties
+08-Dec-2022 02:49:44.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Dec-2022 02:49:44.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Dec-2022 02:49:44.241 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Dec-2022 02:49:44.249 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Dec-2022 02:49:44.249 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 02:49:44.249 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 02:49:44.249 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\temp
+08-Dec-2022 02:49:44.257 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+08-Dec-2022 02:49:44.257 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+08-Dec-2022 02:49:44.257 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+08-Dec-2022 02:49:44.281 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+08-Dec-2022 02:49:44.653 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Dec-2022 02:49:44.701 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-nio-8443"]
+08-Dec-2022 02:49:44.789 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8443]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1051)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1045)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.lang.IllegalArgumentException: Cannot obtain resource for specified location [C:/Users/Mateusz/.keystore]: no readable file, classloader resource, or this is not a resolvable URI
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:107)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:71)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:235)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:606)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1048)
+		... 13 more
+	Caused by: java.io.IOException: Cannot obtain resource for specified location [C:/Users/Mateusz/.keystore]: no readable file, classloader resource, or this is not a resolvable URI
+		at org.apache.catalina.startup.CatalinaBaseConfigurationSource.getResource(CatalinaBaseConfigurationSource.java:120)
+		at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:199)
+		at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:207)
+		at org.apache.tomcat.util.net.SSLUtilBase.getKeyManagers(SSLUtilBase.java:283)
+		at org.apache.tomcat.util.net.openssl.OpenSSLUtil.getKeyManagers(OpenSSLUtil.java:98)
+		at org.apache.tomcat.util.net.SSLUtilBase.createSSLContext(SSLUtilBase.java:247)
+		at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:105)
+		... 20 more
+	Caused by: java.net.MalformedURLException: unknown protocol: c
+		at java.base/java.net.URL.<init>(URL.java:681)
+		at java.base/java.net.URL.fromURI(URL.java:748)
+		at java.base/java.net.URI.toURL(URI.java:1139)
+		at org.apache.catalina.startup.CatalinaBaseConfigurationSource.getResource(CatalinaBaseConfigurationSource.java:117)
+		... 26 more
+08-Dec-2022 02:49:44.793 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [879] milliseconds
+08-Dec-2022 02:49:44.863 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Dec-2022 02:49:44.863 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+08-Dec-2022 02:49:44.890 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war]
+08-Dec-2022 02:49:44.920 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera] was found with a last modified time that did not match the associated WAR. It will be deleted.
+08-Dec-2022 02:49:45.121 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 02:49:45.460 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war] has finished in [570] ms
+08-Dec-2022 02:49:45.468 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war]
+08-Dec-2022 02:49:45.473 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone] was found with a last modified time that did not match the associated WAR. It will be deleted.
+08-Dec-2022 02:49:45.523 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 02:49:45.558 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war] has finished in [90] ms
+08-Dec-2022 02:49:45.567 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war]
+08-Dec-2022 02:49:45.575 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen] was found with a last modified time that did not match the associated WAR. It will be deleted.
+08-Dec-2022 02:49:45.608 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 02:49:45.645 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war] has finished in [78] ms
+08-Dec-2022 02:49:45.653 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war]
+08-Dec-2022 02:49:45.663 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee] was found with a last modified time that did not match the associated WAR. It will be deleted.
+08-Dec-2022 02:49:45.705 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 02:49:45.730 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war] has finished in [77] ms
+08-Dec-2022 02:49:45.730 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs]
+08-Dec-2022 02:49:45.767 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs] has finished in [37] ms
+08-Dec-2022 02:49:45.775 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples]
+08-Dec-2022 02:49:46.453 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples] has finished in [678] ms
+08-Dec-2022 02:49:46.453 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager]
+08-Dec-2022 02:49:46.521 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager] has finished in [60] ms
+08-Dec-2022 02:49:46.521 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager]
+08-Dec-2022 02:49:46.587 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager] has finished in [66] ms
+08-Dec-2022 02:49:46.587 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT]
+08-Dec-2022 02:49:46.675 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT] has finished in [88] ms
+08-Dec-2022 02:49:46.683 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Dec-2022 02:49:46.825 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [2026] milliseconds
+08-Dec-2022 03:10:19.162 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+08-Dec-2022 03:10:22.312 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+08-Dec-2022 03:10:22.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+08-Dec-2022 03:10:22.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+08-Dec-2022 03:10:22.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+08-Dec-2022 03:10:22.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Dec-2022 03:10:22.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-Dec-2022 03:10:22.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17.0.5
+08-Dec-2022 03:10:22.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+9-LTS-191
+08-Dec-2022 03:10:22.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Dec-2022 03:10:22.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 03:10:22.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 03:10:22.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Dec-2022 03:10:22.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Dec-2022 03:10:22.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Dec-2022 03:10:22.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Dec-2022 03:10:22.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Dec-2022 03:10:22.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\conf\logging.properties
+08-Dec-2022 03:10:22.337 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Dec-2022 03:10:22.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Dec-2022 03:10:22.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Dec-2022 03:10:22.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Dec-2022 03:10:22.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 03:10:22.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 03:10:22.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\temp
+08-Dec-2022 03:10:22.339 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+08-Dec-2022 03:10:22.339 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+08-Dec-2022 03:10:22.339 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+08-Dec-2022 03:10:22.339 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+08-Dec-2022 03:10:22.692 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Dec-2022 03:10:22.707 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1051)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1045)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:275)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:606)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1048)
+		... 13 more
+08-Dec-2022 03:10:22.720 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-nio-8443"]
+08-Dec-2022 03:10:23.092 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1004] milliseconds
+08-Dec-2022 03:10:23.139 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Dec-2022 03:10:23.139 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+08-Dec-2022 03:10:23.176 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war]
+08-Dec-2022 03:10:23.319 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 03:10:23.585 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war] has finished in [409] ms
+08-Dec-2022 03:10:23.585 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war]
+08-Dec-2022 03:10:23.612 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 03:10:23.648 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war] has finished in [63] ms
+08-Dec-2022 03:10:23.648 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war]
+08-Dec-2022 03:10:23.680 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 03:10:23.712 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war] has finished in [64] ms
+08-Dec-2022 03:10:23.716 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war]
+08-Dec-2022 03:10:23.737 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 03:10:23.753 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war] has finished in [37] ms
+08-Dec-2022 03:10:23.753 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs]
+08-Dec-2022 03:10:23.784 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs] has finished in [31] ms
+08-Dec-2022 03:10:23.800 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples]
+08-Dec-2022 03:10:24.323 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples] has finished in [523] ms
+08-Dec-2022 03:10:24.324 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager]
+08-Dec-2022 03:10:24.360 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager] has finished in [36] ms
+08-Dec-2022 03:10:24.360 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager]
+08-Dec-2022 03:10:24.422 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager] has finished in [62] ms
+08-Dec-2022 03:10:24.422 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT]
+08-Dec-2022 03:10:24.448 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT] has finished in [26] ms
+08-Dec-2022 03:10:24.448 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-nio-8443"]
+08-Dec-2022 03:10:24.476 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1384] milliseconds
+08-Dec-2022 03:10:24.484 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.Net.bind(Net.java:544)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:580)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+08-Dec-2022 03:10:24.484 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+08-Dec-2022 03:10:24.484 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["https-openssl-nio-8443"]
+08-Dec-2022 03:10:24.499 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+08-Dec-2022 03:10:24.569 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["https-openssl-nio-8443"]
+08-Dec-2022 03:10:24.601 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+08-Dec-2022 03:10:24.601 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+08-Dec-2022 03:10:24.601 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["https-openssl-nio-8443"]
+08-Dec-2022 03:18:13.958 INFO [http-nio-8080-exec-1] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x03E.0xec<xzgW0xc40xa6]0xcf0xdf0xfdT60x7f0xca0xb40x0e0xbe0xc40x140xcbZ0xf2D-0x7f}0xf2J ]. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Dec-2022 03:18:45.127 INFO [http-nio-8080-exec-2] org.apache.coyote.http11.Http11Processor.service Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+	java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030xa90xf5R0xb00xc90x8d0xa190xaa0xa30xb90x830xaeO0xc30xad0xfeQ`0x8e0xc60xc30xf00x9e0xd5d0xea10x090xa30xa60x1d ]. HTTP method names must be tokens
+		at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+08-Dec-2022 03:28:12.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+08-Dec-2022 03:28:12.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+08-Dec-2022 03:28:12.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+08-Dec-2022 03:28:12.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+08-Dec-2022 03:28:12.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Dec-2022 03:28:12.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-Dec-2022 03:28:12.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17.0.5
+08-Dec-2022 03:28:12.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+9-LTS-191
+08-Dec-2022 03:28:12.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Dec-2022 03:28:12.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 03:28:12.269 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 03:28:12.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Dec-2022 03:28:12.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Dec-2022 03:28:12.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Dec-2022 03:28:12.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Dec-2022 03:28:12.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Dec-2022 03:28:12.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\conf\logging.properties
+08-Dec-2022 03:28:12.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Dec-2022 03:28:12.279 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Dec-2022 03:28:12.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Dec-2022 03:28:12.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Dec-2022 03:28:12.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 03:28:12.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 03:28:12.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\temp
+08-Dec-2022 03:28:12.286 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+08-Dec-2022 03:28:12.286 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+08-Dec-2022 03:28:12.286 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+08-Dec-2022 03:28:12.302 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+08-Dec-2022 03:28:12.607 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Dec-2022 03:28:12.638 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-nio-8443"]
+08-Dec-2022 03:28:12.989 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [935] milliseconds
+08-Dec-2022 03:28:13.046 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Dec-2022 03:28:13.046 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+08-Dec-2022 03:28:13.070 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war]
+08-Dec-2022 03:28:13.235 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 03:28:13.481 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war] has finished in [411] ms
+08-Dec-2022 03:28:13.481 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war]
+08-Dec-2022 03:28:13.512 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 03:28:13.541 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war] has finished in [60] ms
+08-Dec-2022 03:28:13.541 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war]
+08-Dec-2022 03:28:13.568 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 03:28:13.599 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war] has finished in [58] ms
+08-Dec-2022 03:28:13.615 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war]
+08-Dec-2022 03:28:13.627 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 03:28:13.659 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war] has finished in [60] ms
+08-Dec-2022 03:28:13.659 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs]
+08-Dec-2022 03:28:13.696 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs] has finished in [37] ms
+08-Dec-2022 03:28:13.698 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples]
+08-Dec-2022 03:28:14.253 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples] has finished in [555] ms
+08-Dec-2022 03:28:14.253 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager]
+08-Dec-2022 03:28:14.323 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager] has finished in [70] ms
+08-Dec-2022 03:28:14.323 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager]
+08-Dec-2022 03:28:14.377 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager] has finished in [54] ms
+08-Dec-2022 03:28:14.377 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT]
+08-Dec-2022 03:28:14.410 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT] has finished in [33] ms
+08-Dec-2022 03:28:14.421 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Dec-2022 03:28:14.437 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-nio-8443"]
+08-Dec-2022 03:28:14.444 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1448] milliseconds
+08-Dec-2022 04:00:54.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+08-Dec-2022 04:00:54.814 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+08-Dec-2022 04:00:54.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+08-Dec-2022 04:00:54.815 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+08-Dec-2022 04:00:54.816 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+08-Dec-2022 04:00:54.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+08-Dec-2022 04:00:54.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17.0.5
+08-Dec-2022 04:00:54.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+9-LTS-191
+08-Dec-2022 04:00:54.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+08-Dec-2022 04:00:54.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 04:00:54.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 04:00:54.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+08-Dec-2022 04:00:54.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+08-Dec-2022 04:00:54.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+08-Dec-2022 04:00:54.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+08-Dec-2022 04:00:54.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+08-Dec-2022 04:00:54.831 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\conf\logging.properties
+08-Dec-2022 04:00:54.831 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+08-Dec-2022 04:00:54.831 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+08-Dec-2022 04:00:54.831 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+08-Dec-2022 04:00:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+08-Dec-2022 04:00:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 04:00:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+08-Dec-2022 04:00:54.833 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\temp
+08-Dec-2022 04:00:54.833 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+08-Dec-2022 04:00:54.833 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+08-Dec-2022 04:00:54.833 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+08-Dec-2022 04:00:54.842 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+08-Dec-2022 04:00:55.144 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+08-Dec-2022 04:00:55.182 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-nio-8443"]
+08-Dec-2022 04:00:55.580 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [985] milliseconds
+08-Dec-2022 04:00:55.666 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+08-Dec-2022 04:00:55.666 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+08-Dec-2022 04:00:55.697 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war]
+08-Dec-2022 04:00:55.869 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 04:00:56.234 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war] has finished in [537] ms
+08-Dec-2022 04:00:56.234 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war]
+08-Dec-2022 04:00:56.267 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 04:00:56.319 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war] has finished in [85] ms
+08-Dec-2022 04:00:56.319 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war]
+08-Dec-2022 04:00:56.349 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 04:00:56.368 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war] has finished in [49] ms
+08-Dec-2022 04:00:56.383 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war]
+08-Dec-2022 04:00:56.399 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 04:00:56.431 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war] has finished in [48] ms
+08-Dec-2022 04:00:56.431 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs]
+08-Dec-2022 04:00:56.462 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs] has finished in [31] ms
+08-Dec-2022 04:00:56.462 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples]
+08-Dec-2022 04:00:57.090 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples] has finished in [628] ms
+08-Dec-2022 04:00:57.090 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager]
+08-Dec-2022 04:00:57.163 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager] has finished in [73] ms
+08-Dec-2022 04:00:57.163 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager]
+08-Dec-2022 04:00:57.226 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager] has finished in [63] ms
+08-Dec-2022 04:00:57.226 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT]
+08-Dec-2022 04:00:57.266 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT] has finished in [40] ms
+08-Dec-2022 04:00:57.266 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+08-Dec-2022 04:00:57.304 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-nio-8443"]
+08-Dec-2022 04:00:57.311 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [1717] milliseconds
+08-Dec-2022 04:40:32.440 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\Engiee-1.0-SNAPSHOT.war]
+08-Dec-2022 04:40:32.630 WARNING [Catalina-utility-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 04:40:32.688 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\Engiee-1.0-SNAPSHOT.war] has finished in [248] ms
+08-Dec-2022 04:40:52.748 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\EngieeCamera-1.0-SNAPSHOT.war]
+08-Dec-2022 04:40:52.889 WARNING [Catalina-utility-2] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 04:40:52.993 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\EngieeCamera-1.0-SNAPSHOT.war] has finished in [243] ms
+08-Dec-2022 04:41:03.516 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/engiee]
+08-Dec-2022 04:41:04.109 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/engiee/camera]
+08-Dec-2022 04:41:14.689 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Engiee-1.0-SNAPSHOT]
+08-Dec-2022 04:41:14.742 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engie.war]
+08-Dec-2022 04:41:14.911 WARNING [Catalina-utility-2] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 04:41:14.958 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engie.war] has finished in [215] ms
+08-Dec-2022 04:41:25.481 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/EngieeCamera-1.0-SNAPSHOT]
+08-Dec-2022 04:41:25.532 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war]
+08-Dec-2022 04:41:25.676 WARNING [Catalina-utility-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 04:41:25.783 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war] has finished in [252] ms
+08-Dec-2022 04:41:36.311 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/engie]
+08-Dec-2022 04:41:36.368 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war]
+08-Dec-2022 04:41:36.491 WARNING [Catalina-utility-2] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+08-Dec-2022 04:41:36.534 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war] has finished in [166] ms

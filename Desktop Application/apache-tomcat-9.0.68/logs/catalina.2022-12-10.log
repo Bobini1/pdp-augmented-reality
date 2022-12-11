@@ -1,0 +1,218 @@
+10-Dec-2022 22:58:46.369 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+10-Dec-2022 22:58:46.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+10-Dec-2022 22:58:46.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+10-Dec-2022 22:58:46.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+10-Dec-2022 22:58:46.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+10-Dec-2022 22:58:46.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+10-Dec-2022 22:58:46.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17.0.5
+10-Dec-2022 22:58:46.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.5+9-LTS-191
+10-Dec-2022 22:58:46.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+10-Dec-2022 22:58:46.373 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+10-Dec-2022 22:58:46.373 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+10-Dec-2022 22:58:46.379 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+10-Dec-2022 22:58:46.379 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+10-Dec-2022 22:58:46.379 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+10-Dec-2022 22:58:46.379 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+10-Dec-2022 22:58:46.380 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+10-Dec-2022 22:58:46.380 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\conf\logging.properties
+10-Dec-2022 22:58:46.380 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+10-Dec-2022 22:58:46.381 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+10-Dec-2022 22:58:46.381 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+10-Dec-2022 22:58:46.381 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+10-Dec-2022 22:58:46.382 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+10-Dec-2022 22:58:46.382 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68
+10-Dec-2022 22:58:46.382 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\temp
+10-Dec-2022 22:58:46.385 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+10-Dec-2022 22:58:46.385 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+10-Dec-2022 22:58:46.386 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+10-Dec-2022 22:58:46.389 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+10-Dec-2022 22:58:46.563 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+10-Dec-2022 22:58:46.580 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-openssl-nio-8443"]
+10-Dec-2022 22:58:46.790 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [558] milliseconds
+10-Dec-2022 22:58:46.827 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+10-Dec-2022 22:58:46.828 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+10-Dec-2022 22:58:46.841 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war]
+10-Dec-2022 22:58:46.927 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+10-Dec-2022 22:58:47.083 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war] has finished in [242] ms
+10-Dec-2022 22:58:47.084 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war]
+10-Dec-2022 22:58:47.095 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+10-Dec-2022 22:58:47.114 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war] has finished in [30] ms
+10-Dec-2022 22:58:47.115 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war]
+10-Dec-2022 22:58:47.125 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+10-Dec-2022 22:58:47.141 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war] has finished in [26] ms
+10-Dec-2022 22:58:47.143 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war]
+10-Dec-2022 22:58:47.153 WARNING [main] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+10-Dec-2022 22:58:47.162 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war] has finished in [19] ms
+10-Dec-2022 22:58:47.163 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs]
+10-Dec-2022 22:58:47.182 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\docs] has finished in [19] ms
+10-Dec-2022 22:58:47.182 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples]
+10-Dec-2022 22:58:47.456 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\examples] has finished in [273] ms
+10-Dec-2022 22:58:47.456 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager]
+10-Dec-2022 22:58:47.489 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\host-manager] has finished in [33] ms
+10-Dec-2022 22:58:47.489 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager]
+10-Dec-2022 22:58:47.519 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\manager] has finished in [30] ms
+10-Dec-2022 22:58:47.520 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT]
+10-Dec-2022 22:58:47.537 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\ROOT] has finished in [17] ms
+10-Dec-2022 22:58:47.539 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+10-Dec-2022 22:58:47.552 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["https-openssl-nio-8443"]
+10-Dec-2022 22:58:47.553 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [762] milliseconds
+10-Dec-2022 23:08:28.346 SEVERE [https-openssl-nio-8443-exec-9] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [com.team4.engieecamera.Clicks] and the following error occurred
+	java.io.IOException: java.io.IOException: An established connection was aborted by the software in your host machine
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:327)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:262)
+		at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:824)
+		at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:747)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:367)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:296)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+		at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+		at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:97)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+		at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+		at org.apache.tomcat.util.net.SecureNioChannel.flush(SecureNioChannel.java:124)
+		at org.apache.tomcat.util.net.SecureNioChannel.write(SecureNioChannel.java:861)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1680)
+		at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1070)
+		at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1489)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1415)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1386)
+		at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:93)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:512)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+		... 19 more
+10-Dec-2022 23:08:28.346 SEVERE [https-openssl-nio-8443-exec-10] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [com.team4.engieecamera.Server] and the following error occurred
+	java.io.IOException: java.io.IOException: An established connection was aborted by the software in your host machine
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:327)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:262)
+		at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:824)
+		at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:747)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:367)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:296)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+		at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+		at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:97)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+		at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+		at org.apache.tomcat.util.net.SecureNioChannel.flush(SecureNioChannel.java:124)
+		at org.apache.tomcat.util.net.SecureNioChannel.write(SecureNioChannel.java:861)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1680)
+		at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1070)
+		at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1489)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1415)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1386)
+		at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:93)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:512)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+		... 19 more
+10-Dec-2022 23:59:45.814 SEVERE [https-openssl-nio-8443-exec-8] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [com.team4.engieecamera.Clicks] and the following error occurred
+	java.io.IOException: java.io.IOException: An established connection was aborted by the software in your host machine
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:327)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:262)
+		at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:824)
+		at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:747)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:367)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:296)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+		at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+		at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:97)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+		at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+		at org.apache.tomcat.util.net.SecureNioChannel.flush(SecureNioChannel.java:124)
+		at org.apache.tomcat.util.net.SecureNioChannel.write(SecureNioChannel.java:861)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1680)
+		at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1070)
+		at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1489)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1415)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1386)
+		at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:93)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:512)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+		... 19 more
+10-Dec-2022 23:59:45.814 SEVERE [https-openssl-nio-8443-exec-9] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [com.team4.engieecamera.Server] and the following error occurred
+	java.io.IOException: java.io.IOException: An established connection was aborted by the software in your host machine
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:327)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:262)
+		at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:824)
+		at org.apache.tomcat.websocket.WsSession.onClose(WsSession.java:747)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataControl(WsFrameBase.java:367)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:296)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:133)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+		at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+		at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:54)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:132)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:97)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:53)
+		at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:532)
+		at org.apache.tomcat.util.net.SecureNioChannel.flush(SecureNioChannel.java:124)
+		at org.apache.tomcat.util.net.SecureNioChannel.write(SecureNioChannel.java:861)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1680)
+		at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1070)
+		at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1489)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1415)
+		at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1386)
+		at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:93)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:512)
+		at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:314)
+		... 19 more

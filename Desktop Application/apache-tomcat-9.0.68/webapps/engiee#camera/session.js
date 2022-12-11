@@ -6,6 +6,9 @@ var peerConnection;
 var signalingWebsocket = new WebSocket("wss://" + window.location.host +
     "/engiee/camera/server");
 
+var clicksWebsocket = new WebSocket("wss://" + window.location.host +
+    "/engiee/camera/clicks");
+
 signalingWebsocket.onmessage = function(msg) {
     var signal = JSON.parse(msg.data);
     switch (signal.type) {
@@ -189,4 +192,15 @@ function logVideoAudioTrackInfo(localStream) {
     if (audioTracks.length > 0) {
         console.log(`Using audio device: ${audioTracks[0].label}`);
     }
+}
+
+
+
+function clickHandler(event) {
+    let x = event.screenX
+    let y = event.screenY
+    let message = {x: x, y: y}
+    console.log(`XY coordinates of user click: ${x} ${y}`)
+    clicksWebsocket.send(JSON.stringify(message))
+
 }
