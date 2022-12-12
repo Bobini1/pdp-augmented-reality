@@ -21,7 +21,7 @@ public class PointGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ws = new WebSocket("wss://192.168.33.3:8443/engiee/camera/clicks");
+        ws = new WebSocket("wss://192.168.43.187:8443/engiee/screen/clicks");
         var camera = Camera.main;
         ws.OnMessage += (sender, e) =>
         {
@@ -47,7 +47,8 @@ public class PointGenerator : MonoBehaviour
                         // generate directional indicator
                         GameObject indicator = GameObject.CreatePrimitive(PrimitiveType.Sphere);
                         indicator.transform.position = hit.point;
-                        indicator.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+                        indicator.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+                        indicator.GetComponent<Renderer>().material.color = Color.red;
                     }
                 });
             }
