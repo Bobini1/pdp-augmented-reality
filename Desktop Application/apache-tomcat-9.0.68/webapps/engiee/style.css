@@ -1,3 +1,7 @@
+:root {
+    --engiee-red: rgb(214.7,51,55);
+}
+
 body, html {
   background: black;
   height: 100%;
@@ -17,4 +21,160 @@ body, html {
 #video {
     width: 100%;
     height: 100%;
+}
+
+#logo {
+    margin-left: 36%;
+    margin-right: 36%;
+    width: 28%;
+}
+
+.buttonArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 30%;
+    height: 125px;
+    margin: 3px;
+}
+
+.menuButton {
+    background-color: var(--engiee-red);
+    color: white;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    width: 80%;
+    position: relative;
+}
+
+.firstRow .menuButton:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    right: -1px;
+    border-left: 2px solid var(--engiee-red);
+    border-top: 119px solid var(--engiee-red);
+    background-color: var(--engiee-red);
+}
+
+.firstRow .menuButton:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 99.5%;
+    border-left: 2px solid var(--engiee-red);
+    border-top: 119px solid var(--engiee-red);
+    background-color: var(--engiee-red);
+}
+
+.menuButton:hover {
+    cursor: pointer;
+}
+
+.leftSide {
+    float: left;
+    width: 0;
+    height: 0;
+    border-top: 125px solid var(--engiee-red);
+    border-left: 19px solid transparent;
+    position: relative;
+}
+
+.firstRow .leftSide {
+    border-left: 21px solid transparent;
+}
+
+.leftSide:hover {
+    cursor: pointer;
+}
+
+.leftSide:before {
+    content: "";
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    border-top: 122px solid var(--engiee-red);
+    border-left: 21px solid transparent;
+    top: -122px;
+    left: -21px;
+}
+
+.secondRow .leftSide:before {
+    border-top: 122px solid black;
+}
+
+.rightSide {
+    float: right;
+    width: 0;
+    height: 0;
+    border-bottom: 125px solid var(--engiee-red);
+    border-right: 19px solid transparent;
+    position: relative;
+}
+
+.firstRow .rightSide {
+    border-right: 21px solid transparent;
+}
+
+.rightSide:hover {
+    cursor: pointer;
+}
+
+.rightSide:before {
+    content: "";
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    border-bottom: 122px solid var(--engiee-red);
+    border-right: 21px solid transparent;
+}
+
+.secondRow .rightSide:before {
+    border-bottom: 122px solid black;
+}
+
+img {
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.menuSubOptionIcon {
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 20%;
+}
+
+.menuSubOption {
+    font-size: 17px;
+    color: var(--engiee-red);
+    background: black;
+    border-top: 3px solid var(--engiee-red);
+    border-bottom: 3px solid var(--engiee-red);
+}
+
+#footer {
+    position: absolute;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    bottom: 0;
+    right: 5px;
 }

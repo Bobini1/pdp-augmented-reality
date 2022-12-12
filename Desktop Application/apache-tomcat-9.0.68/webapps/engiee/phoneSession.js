@@ -11,12 +11,13 @@ function logVideoAudioTrackInfo(localStream) {
 
 const SAMPLES = 1024;
 const SAMPLING = 0.005;
-const MIN_CIRCLE = 256;
-const MAX_CIRCLE = 512;
+const MIN_CIRCLE = 200;
+const MAX_CIRCLE = 400;
 const AVG_CIRCLE = (MIN_CIRCLE + MAX_CIRCLE)/2
 
 var fft;
-var particles = []
+var particles = [];
+var clicked = true;
 
 async function displayLocalPhone() {
     //const phoneVideo = document.getElementById("video");
@@ -32,7 +33,13 @@ async function displayLocalPhone() {
 }
 
 function setup() {
-  createCanvas(1024, 1024);
+  let visualiserCanvas = createCanvas(windowWidth, 800);
+  visualiserCanvas.parent("video-container");
+  visualiserCanvas.id("video");
+	
+  if (getAudioContext().state !== 'running'){
+    clicked = false;
+  }
 
   fft = new p5.FFT(0.8, SAMPLES);
   displayLocalPhone()
@@ -45,6 +52,10 @@ function draw() {
   noFill();
   
   translate(width / 2, height / 2);
+  textSize(32);
+  if(clicked === false){
+    text("Click to start", -85, 0);
+  }
   
   fft.analyze()
   amp = fft.getEnergy(20, 200);
@@ -84,10 +95,10 @@ function draw() {
 }
 
 function mousePressed(){
-  if (getAudioContext().state !== 'running') {
-    getAudioContext().resume();
-  }else
-	  getAudioContext().suspend();
+  if (getAudioContext().state !== 'running'){
+    getAudioContext().resume();  
+  }
+  clicked = true;
 }
 
 class Particle{
