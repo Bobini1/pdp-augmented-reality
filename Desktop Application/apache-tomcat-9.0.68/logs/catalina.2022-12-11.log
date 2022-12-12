@@ -822,3 +822,73 @@
 		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 		at java.base/java.lang.Thread.run(Thread.java:833)
+11-Dec-2022 04:03:12.375 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/engiee/screen]
+11-Dec-2022 04:03:12.659 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/engiee/phone]
+11-Dec-2022 04:03:12.680 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war]
+11-Dec-2022 04:03:12.741 WARNING [Catalina-utility-2] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+11-Dec-2022 04:03:12.795 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#phone.war] has finished in [112] ms
+11-Dec-2022 04:03:12.796 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war]
+11-Dec-2022 04:03:12.817 WARNING [Catalina-utility-2] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+11-Dec-2022 04:03:12.838 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#screen.war] has finished in [41] ms
+11-Dec-2022 04:04:42.954 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/engiee]
+11-Dec-2022 04:04:42.968 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/engiee/camera]
+11-Dec-2022 04:04:42.981 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war]
+11-Dec-2022 04:04:43.013 WARNING [Catalina-utility-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+11-Dec-2022 04:04:43.044 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee#camera.war] has finished in [62] ms
+11-Dec-2022 04:04:43.045 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war]
+11-Dec-2022 04:04:43.086 WARNING [Catalina-utility-1] org.apache.tomcat.util.descriptor.web.WebXml.setVersion Unknown version string [5.0]. Default version will be used.
+11-Dec-2022 04:04:43.107 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\tkalisiak\private\pdp-augmented-reality\Desktop Application\apache-tomcat-9.0.68\webapps\engiee.war] has finished in [62] ms
+11-Dec-2022 04:07:49.108 SEVERE [https-openssl-nio-8443-exec-17] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [com.team4.engieecamera.Clicks] and the following error occurred
+	java.io.EOFException
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1340)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1290)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1234)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:75)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+11-Dec-2022 06:41:54.075 SEVERE [https-openssl-nio-8443-exec-15] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [com.team4.engieecamera.Clicks] and the following error occurred
+	java.io.EOFException
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1340)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1290)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1234)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:75)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+11-Dec-2022 06:41:54.082 SEVERE [https-openssl-nio-8443-exec-13] org.apache.tomcat.websocket.pojo.PojoEndpointBase.onError No error handling configured for [com.team4.engieecamera.Server] and the following error occurred
+	java.io.EOFException
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1340)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1290)
+		at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1234)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:75)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:183)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:162)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:157)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)

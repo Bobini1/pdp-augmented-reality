@@ -21,13 +21,14 @@ public class PointGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ws = new WebSocket("wss://192.168.33.3:8443/engiee/camera/clicks");
+        ws = new WebSocket("wss://192.168.43.187:8443/engiee/screen/clicks");
         var camera = Camera.main;
         ws.OnMessage += (sender, e) =>
         {
             Debug.Log("Message Received from " + ((WebSocket)sender).Url + ", Data : " + e.Data);
             // parse json
             Point p = JsonUtility.FromJson<Point>(e.Data);
+            p.y = Screen.height - p.y;
             Debug.Log("Point: " + p);
             Debug.Log("test");
             // raycast to point
@@ -36,7 +37,7 @@ public class PointGenerator : MonoBehaviour
             {
                 ExecuteOnMainThread.RunOnMainThread.Enqueue(() =>
                 {
-                    ray = camera.ScreenPointToRay(new Vector3(p.x, -p.y, 0));
+                    ray = camera.ScreenPointToRay(new Vector3(p.x, p.y, 0));
                     Debug.Log("ray: " + ray);
                     // get hit point on a wall
                     RaycastHit hit;
@@ -46,7 +47,8 @@ public class PointGenerator : MonoBehaviour
                         // generate directional indicator
                         GameObject indicator = GameObject.CreatePrimitive(PrimitiveType.Sphere);
                         indicator.transform.position = hit.point;
-                        indicator.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+                        indicator.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+                        indicator.GetComponent<Renderer>().material.color = Color.red;
                     }
                 });
             }
