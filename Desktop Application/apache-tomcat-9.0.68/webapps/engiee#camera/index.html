@@ -4,8 +4,20 @@
   <meta charset="UTF-8">
   <title>Engiee camera</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modalStyle.css">
+  <script src="modalScript.js"></script>
 </head>
 <body>
+<div class="overlay" id="overlay" hidden>
+  <div class="confirm-box">
+    <div onclick="closeConfirmBox()" class="close">&#10006;</div>
+    <h2 id="modal-title"></h2>
+    <p id="modal-text"></p>
+    <button class="confirmationButton" onclick="isConfirm(true)">Yes</button>
+    <button class="confirmationButton" onclick="isConfirm(false)">No</button>
+    <p></p>
+  </div>
+</div>
 <div id="video-container" onclick="clickHandler(event)">
   <video id="video" poster="https://img.icons8.com/color/512/person-male.png" autoplay></video>
 </div>

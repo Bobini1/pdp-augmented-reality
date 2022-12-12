@@ -85,7 +85,7 @@
     -->
 <Connector SSLEnabled="true" acceptCount="100" clientAuth="false"
 disableUploadTimeout="true" enableLookups="false" maxThreads="25"
-port="8443" keystoreFile="C:/Users/tkalisiak/.keystore" keystorePass="POet2001r"
+port="8443" keystoreFile="C:/Users/Mateusz/.keystore" keystorePass="password"
 protocol="org.apache.coyote.http11.Http11NioProtocol" scheme="https"
 secure="true" sslProtocol="TLS" />
     <!--

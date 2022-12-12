@@ -1,0 +1,52 @@
+:root {
+  --engieeRed: rgb(214.7, 51, 55);
+}
+
+html,
+  body {
+    height: 100%;
+    font-family: monospace;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+  }
+
+  .confirm-box {
+    position: absolute;
+    width: 20%;
+    
+    top: 10%;
+    left: 40%;
+    text-align: center;
+    background: white;
+	margin: 0 auto;
+  }
+
+  .confirmationButton {
+    font-family: monospace;
+    font-size: 15px;
+    color: white;
+    background-color: var(--engieeRed);
+    border: 2px solid var(--engieeRed);
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+
+  .confirmationButton:hover {
+    cursor: pointer;
+    background: white;
+    color: var(--engieeRed);
+    border: 2px solid var(--engieeRed);
+  }
+
+  .close {
+    cursor: pointer;
+	text-align: right;
+	letter-spacing: 10px;
+  }
