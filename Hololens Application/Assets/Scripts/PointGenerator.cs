@@ -28,6 +28,7 @@ public class PointGenerator : MonoBehaviour
             Debug.Log("Message Received from " + ((WebSocket)sender).Url + ", Data : " + e.Data);
             // parse json
             Point p = JsonUtility.FromJson<Point>(e.Data);
+            p.y = Screen.height - p.y;
             Debug.Log("Point: " + p);
             Debug.Log("test");
             // raycast to point
@@ -36,7 +37,7 @@ public class PointGenerator : MonoBehaviour
             {
                 ExecuteOnMainThread.RunOnMainThread.Enqueue(() =>
                 {
-                    ray = camera.ScreenPointToRay(new Vector3(p.x, -p.y, 0));
+                    ray = camera.ScreenPointToRay(new Vector3(p.x, p.y, 0));
                     Debug.Log("ray: " + ray);
                     // get hit point on a wall
                     RaycastHit hit;
