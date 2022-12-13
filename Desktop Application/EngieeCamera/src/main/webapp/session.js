@@ -82,7 +82,7 @@ async function displayLocalStreamAndSignal(firstTime) {
         // Capture local video & audio stream & set to local <video> DOM
         // element
         const stream = await navigator.mediaDevices.getUserMedia({
-            audio: false, //todo adapt audioShared variable
+            audio: audioShared,
             video: true
         });
         localStream = stream;
