@@ -23,10 +23,27 @@ body, html {
     height: 100%;
 }
 
+#logoArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #logo {
-    margin-left: 36%;
-    margin-right: 36%;
     width: 28%;
+}
+
+#menuArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 750px;
 }
 
 .menuButton {
@@ -37,8 +54,8 @@ body, html {
     border-radius: 15px;
     background-color: var(--engiee-red);
     color: white;
-    width: 30%;
     height: 125px;
+    width: 30%;
     margin: 3px;
     border: none;
     font-family: monospace;
@@ -53,26 +70,6 @@ body, html {
     transform: translate(0%, -5%);
 }
 
-img {
-    margin-left: 35%;
-    margin-right: 35%;
-    width: 30%;
-}
-
-#menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.menuSubOptionIcon {
-    margin-left: 40%;
-    margin-right: 40%;
-    width: 20%;
-}
-
 .menuSubOption {
     font-size: 17px;
     color: var(--engiee-red);
@@ -82,6 +79,18 @@ img {
 
 .menuSubOption:hover {
     transform: translate(0%, 5%);
+}
+
+img {
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+}
+
+.menuSubOptionIcon {
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 20%;
 }
 
 #footer {

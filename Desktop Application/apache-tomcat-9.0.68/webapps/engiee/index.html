@@ -2,37 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engiee</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<img id="logo" src="logo.bmp">
-<div id="menu">
-    <button class="menuButton" onclick="location.href='screen'">
-        <img src="monitor-white.png">
-        Screen
-    </button>
-    <button class="menuButton" onclick="location.href='camera'">
-        <img src="person-white.png">
-        Camera
-    </button>
-    <button class="menuButton" onclick="location.href='phone'">
-        <img src="phone-white.png">
-        Phone
-    </button>
-    <button class="menuButton menuSubOption" onclick="location.href='screen.html'">
-        <img class="menuSubOptionIcon" src="monitor-red.png">
-        Your Screen
-    </button>
-    <button class="menuButton menuSubOption" onclick="location.href='camera.html'">
-        <img class="menuSubOptionIcon" src="person-red.png">
-        Your Camera
-    </button>
-    <button class="menuButton menuSubOption" onclick="location.href='phone.html'">
-        <img class="menuSubOptionIcon" src="phone-red.png">
-        Your Phone
-    </button>
-    <p id="footer">© 2022 Engiee</p>
+<div id="logoArea">
+    <img id="logo" src="logo.bmp" title="logo">
 </div>
+<div id="menuArea">
+    <div id="menu">
+        <button class="menuButton" onclick="location.href='screen'">
+            <img src="monitor-white.png" title="screen">
+            Screen
+        </button>
+        <button class="menuButton" onclick="location.href='camera'">
+            <img src="person-white.png"  title="camera">
+            Camera
+        </button>
+        <button class="menuButton" onclick="location.href='phone'">
+            <img src="phone-white.png" title="phone">
+            Phone
+        </button>
+        <button class="menuButton menuSubOption" onclick="location.href='screen.html'">
+            <img class="menuSubOptionIcon" src="monitor-red.png" title="your screen">
+            Your Screen
+        </button>
+        <button class="menuButton menuSubOption" onclick="location.href='camera.html'">
+            <img class="menuSubOptionIcon" src="person-red.png" title="your camera">
+            Your Camera
+        </button>
+        <button class="menuButton menuSubOption" onclick="location.href='phone.html'">
+            <img class="menuSubOptionIcon" src="phone-red.png" title="your phone">
+            Your Phone
+        </button>
+    </div>
+</div>
+<p id="footer">© 2022 Engiee</p>
 </body>
 </html>
