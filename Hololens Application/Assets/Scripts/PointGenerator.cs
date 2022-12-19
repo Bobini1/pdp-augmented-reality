@@ -8,9 +8,12 @@ public class PointGenerator : MonoBehaviour
 {
     private class Point
     {
-        public int x;
-        public int y;
-        
+        public float x;
+        public float y;
+        // optional shape field
+        public string shape;
+        public uint color;
+
         public override string ToString()
         {
             return string.Format("({0}, {1})", x, y);
@@ -28,7 +31,7 @@ public class PointGenerator : MonoBehaviour
             Debug.Log("Message Received from " + ((WebSocket)sender).Url + ", Data : " + e.Data);
             // parse json
             Point p = JsonUtility.FromJson<Point>(e.Data);
-            p.y = Screen.height - p.y;
+            p.y = 1 - p.y;
             Debug.Log("Point: " + p);
             Debug.Log("test");
             // raycast to point
@@ -37,18 +40,29 @@ public class PointGenerator : MonoBehaviour
             {
                 ExecuteOnMainThread.RunOnMainThread.Enqueue(() =>
                 {
-                    ray = camera.ScreenPointToRay(new Vector3(p.x, p.y, 0));
+                    var x = (int)(p.x * Screen.width);
+                    var y = (int)(p.y * Screen.height);
+                    ray = camera.ScreenPointToRay(new Vector3(x, y, 0));
+                    // adjust ray angle
                     Debug.Log("ray: " + ray);
                     // get hit point on a wall
                     RaycastHit hit;
-                    if (Physics.Raycast(ray, out hit))
+                    if (!Physics.Raycast(ray, out hit)) return;
+                    Debug.Log("Hit: " + hit.point);
+                    // generate directional indicator
+                    if (p.shape == "sphere" || p.shape.IsNullOrEmpty())
                     {
-                        Debug.Log("Hit: " + hit.point);
-                        // generate directional indicator
-                        GameObject indicator = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                        indicator.transform.position = hit.point;
-                        indicator.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
-                        indicator.GetComponent<Renderer>().material.color = Color.red;
+                        GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+                        sphere.transform.position = hit.point;
+                        sphere.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+                        sphere.GetComponent<Renderer>().material.color = new Color32((byte)(p.color >> 16), (byte)(p.color >> 8), (byte)p.color, 255);
+                    }
+                    else if (p.shape == "cube")
+                    {
+                        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                        cube.transform.position = hit.point;
+                        cube.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+                        cube.GetComponent<Renderer>().material.color = new Color32((byte)(p.color >> 16), (byte)(p.color >> 8), (byte)p.color, 255);
                     }
                 });
             }

@@ -9,12 +9,10 @@ public class ExecuteOnMainThread : MonoBehaviour {
         
     void Update()
     {
-        if(!RunOnMainThread.IsEmpty)
+        if (RunOnMainThread.IsEmpty) return;
+        while(RunOnMainThread.TryDequeue(out var action))
         {
-            while(RunOnMainThread.TryDequeue(out var action))
-            {
-                action?.Invoke();
-            }
+            action?.Invoke();
         }
     }
 }

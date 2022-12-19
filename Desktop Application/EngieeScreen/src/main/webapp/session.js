@@ -155,7 +155,6 @@ function handleOffer(offer) {
     }, function(error) {
         console.warn("Error creating an answer");
     });
-
 }
 
 /*
@@ -197,9 +196,12 @@ function logVideoAudioTrackInfo(localStream) {
 
 
 function clickHandler(event) {
-    let x = event.screenX
-    let y = event.screenY
-    let message = {x: x, y: y}
+    let x = event.clientX;
+    let y = event.clientY;
+    // normalize x and y to 0-1 of offsetWidth and offsetHeight
+    x = x / event.target.offsetWidth;
+    y = y / event.target.offsetHeight;
+    let message = {x: x, y: y, shape: "sphere", color: 0xff0000};
     console.log(`XY coordinates of user click: ${x} ${y}`)
     clicksWebsocket.send(JSON.stringify(message))
 
