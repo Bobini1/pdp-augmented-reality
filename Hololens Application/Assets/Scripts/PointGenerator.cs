@@ -50,14 +50,14 @@ public class PointGenerator : MonoBehaviour
                     if (!Physics.Raycast(ray, out hit)) return;
                     Debug.Log("Hit: " + hit.point);
                     // generate directional indicator
-                    if (p.shape == "sphere" || p.shape.IsNullOrEmpty())
+                    if (p.shape == "sphere")
                     {
                         GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
                         sphere.transform.position = hit.point;
                         sphere.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
                         sphere.GetComponent<Renderer>().material.color = new Color32((byte)(p.color >> 16), (byte)(p.color >> 8), (byte)p.color, 255);
                     }
-                    else if (p.shape == "cube")
+                    else
                     {
                         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                         cube.transform.position = hit.point;
