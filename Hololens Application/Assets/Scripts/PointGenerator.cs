@@ -1,8 +1,11 @@
 using System;
 using System.Collections;
+using System.Diagnostics;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.UIElements;
 using WebSocketSharp;
+using Debug = UnityEngine.Debug;
 
 public class PointGenerator : MonoBehaviour
 {
@@ -18,6 +21,15 @@ public class PointGenerator : MonoBehaviour
         {
             return string.Format("({0}, {1})", x, y);
         }
+        
+        public void RescaleX(float scale)
+        {
+            x = (x - 0.5f) * scale + 0.5f;
+        }
+        public void RescaleY(float scale)
+        {
+            y = (y - 0.5f) * scale + 0.5f;
+        }
     }
     
     WebSocket ws;
@@ -31,9 +43,12 @@ public class PointGenerator : MonoBehaviour
             Debug.Log("Message Received from " + ((WebSocket)sender).Url + ", Data : " + e.Data);
             // parse json
             Point p = JsonUtility.FromJson<Point>(e.Data);
-            p.y = 1 - p.y;
+            // calibration
+            p.y = 1 - p.y - 0.055f;
+            p.x += 0.025f;
+            p.RescaleX(2.8f);
+            p.RescaleY(1.6f);
             Debug.Log("Point: " + p);
-            Debug.Log("test");
             // raycast to point
             Ray ray;
             try
