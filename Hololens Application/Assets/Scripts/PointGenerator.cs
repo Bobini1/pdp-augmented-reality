@@ -36,7 +36,7 @@ public class PointGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ws = new WebSocket("wss://192.168.43.125:8443/engiee/screen/clicks");
+        ws = new WebSocket("wss://192.168.18.6:8443/engiee/screen/clicks");
         var camera = Camera.main;
         ws.OnMessage += (sender, e) =>
         {
