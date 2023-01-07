@@ -579,7 +579,7 @@ MonoBehaviour:
   onHandActivate:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1827583277}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -594,7 +594,7 @@ MonoBehaviour:
   onHandDeactivate:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1827583277}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -681,6 +681,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e916a4f95a57df244aa1fdf9708a67ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1827583277 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7545364183608891058, guid: 9a7c24f281a2c3d45a9b8befe608bf77, type: 3}
+  m_PrefabInstance: {fileID: 2075506001}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2075506001
 PrefabInstance:
   m_ObjectHideFlags: 0
