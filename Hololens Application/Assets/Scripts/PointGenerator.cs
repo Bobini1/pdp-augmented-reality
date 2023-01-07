@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using System.Diagnostics;
 using System.Threading;
 using UnityEngine;
@@ -9,6 +11,7 @@ using Debug = UnityEngine.Debug;
 
 public class PointGenerator : MonoBehaviour
 {
+	List<GameObject> createdPoints;
     private class Point
     {
         public float x;
@@ -36,6 +39,7 @@ public class PointGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+		createdPoints = new List<GameObject>();
         ws = new WebSocket("wss://192.168.18.6:8443/engiee/screen/clicks");
         var camera = Camera.main;
         ws.OnMessage += (sender, e) =>
@@ -71,6 +75,7 @@ public class PointGenerator : MonoBehaviour
                         sphere.transform.position = hit.point;
                         sphere.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
                         sphere.GetComponent<Renderer>().material.color = new Color32((byte)(p.color >> 16), (byte)(p.color >> 8), (byte)p.color, 255);
+						createdPoints.Add(sphere);
                     }
                     else
                     {
@@ -78,6 +83,7 @@ public class PointGenerator : MonoBehaviour
                         cube.transform.position = hit.point;
                         cube.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
                         cube.GetComponent<Renderer>().material.color = new Color32((byte)(p.color >> 16), (byte)(p.color >> 8), (byte)p.color, 255);
+						createdPoints.Add(cube);
                     }
                 });
             }
@@ -96,6 +102,26 @@ public class PointGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    }
+	
+	public void removeLastPoint()
+	{
+		if(createdPoints.Any())
+		{
+			Destroy(createdPoints.Last());
+            createdPoints.RemoveAt(createdPoints.Count - 1);
+
+        }
+	}
+	
+	public void removeAllPoints()
+	{
+		foreach(GameObject point in createdPoints)
+		{
+			Destroy(point);
+		}
+        createdPoints.Clear();
 
     }
 }
