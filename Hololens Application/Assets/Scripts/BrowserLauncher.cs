@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class BrowserLauncher : MonoBehaviour
 {
+    public GameObject IP;
+    AddressScript IPscript;
     // Start is called before the first frame update
     void Start()
     {
-        
+        IPscript = IP.GetComponent<AddressScript>();
     }
 
     // Update is called once per frame
@@ -18,6 +20,7 @@ public class BrowserLauncher : MonoBehaviour
 
     public void Click()
     {
-        Application.OpenURL("https://192.168.18.6:8443/engiee/");
+        string url = "https://" + IPscript.address + ":8443/engiee/";
+        Application.OpenURL(url);
     }
 }

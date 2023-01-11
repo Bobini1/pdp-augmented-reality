@@ -11,7 +11,9 @@ using Debug = UnityEngine.Debug;
 
 public class PointGenerator : MonoBehaviour
 {
-	List<GameObject> createdPoints;
+    public GameObject IP;
+    AddressScript IPscript;
+    List<GameObject> createdPoints;
     private class Point
     {
         public float x;
@@ -39,8 +41,10 @@ public class PointGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-		createdPoints = new List<GameObject>();
-        ws = new WebSocket("wss://192.168.18.6:8443/engiee/screen/clicks");
+        IPscript = IP.GetComponent<AddressScript>();
+        createdPoints = new List<GameObject>();
+        string url = "wss://" + IPscript.address + ":8443/engiee/screen/clicks";
+        ws = new WebSocket(url);
         var camera = Camera.main;
         ws.OnMessage += (sender, e) =>
         {
@@ -73,7 +77,7 @@ public class PointGenerator : MonoBehaviour
                     {
                         GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
                         sphere.transform.position = hit.point;
-                        sphere.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+                        sphere.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
                         sphere.GetComponent<Renderer>().material.color = new Color32((byte)(p.color >> 16), (byte)(p.color >> 8), (byte)p.color, 255);
 						createdPoints.Add(sphere);
                     }
@@ -81,7 +85,7 @@ public class PointGenerator : MonoBehaviour
                     {
                         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                         cube.transform.position = hit.point;
-                        cube.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+                        cube.transform.localScale = new Vector3(0.05f, 0.05f, 0.5f);
                         cube.GetComponent<Renderer>().material.color = new Color32((byte)(p.color >> 16), (byte)(p.color >> 8), (byte)p.color, 255);
 						createdPoints.Add(cube);
                     }

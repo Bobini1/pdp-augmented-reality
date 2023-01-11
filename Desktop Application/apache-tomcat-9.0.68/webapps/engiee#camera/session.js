@@ -197,9 +197,40 @@ function logVideoAudioTrackInfo(localStream) {
 
 
 function clickHandler(event) {
-    let x = event.screenX
-    let y = event.screenY
-    let message = {x: x, y: y}
+    let x = event.clientX;
+    let y = event.clientY;
+    // normalize x and y to 0-1 of offsetWidth and offsetHeight
+    x = x / event.target.offsetWidth;
+    y = y / event.target.offsetHeight;
+	let shapeString = "";
+	let shapeColor = 0xffffff;
+	switch (selectedHologramNo){
+		case 1:
+			shapeString = "sphere";
+			shapeColor = 0xff0000;
+			break;
+		case 2:
+			shapeString = "sphere";
+			shapeColor = 0x00ff00;
+			break;
+		case 3:
+			shapeString = "sphere";
+			shapeColor = 0x0000ff;
+			break;
+		case 4:
+			shapeString = "cube";
+			shapeColor = 0xff0000;
+			break;
+		case 5:
+			shapeString = "cube";
+			shapeColor = 0x00ff00;
+			break;
+		case 6:
+			shapeString = "cube";
+			shapeColor = 0x0000ff;
+			break;
+	}
+    let message = {x: x, y: y, shape: shapeString, color: shapeColor};
     console.log(`XY coordinates of user click: ${x} ${y}`)
     clicksWebsocket.send(JSON.stringify(message))
 
