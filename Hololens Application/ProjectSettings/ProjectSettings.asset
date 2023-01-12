@@ -16,7 +16,7 @@ PlayerSettings:
   productName: Engiee
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
@@ -40,7 +40,7 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos: []
-  m_VirtualRealitySplashScreen: {fileID: 0}
+  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: c925d8bc5a675b1469b7edf4dfe10b21, type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
   defaultScreenHeight: 1080
@@ -175,6 +175,14 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 1685872056564712374, guid: 1260e9552216417468bc21d7f428ff0b, type: 2}
+  - {fileID: 457452170403555727, guid: 13b825ef6593a6e4ca3e953f20d488e9, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -307,7 +315,14 @@ PlayerSettings:
   AndroidMinifyDebug: 0
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: f45b086380dfac0458270fc0fa4042ea, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetPlatformIcons: []
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
@@ -679,18 +694,27 @@ PlayerSettings:
   metroCertificateIssuer: DefaultCompany
   metroCertificateNotAfter: 0065a1e5012cda01
   metroApplicationDescription: Template_3D
-  wsaImages: {}
+  wsaImages:
+    65636: Assets/Logos/logo-50.png
+    65736: 
+    131272: Assets/Logos/logo-1240-600.png
+    2031640: Assets/Logos/logo-24.png
+    2031716: 
+    2031816: Assets/Logos/logo-88.png
+    2097352: Assets/Logos/logo-142.png
+    2162888: Assets/Logos/logo-300.png
+    2293960: Assets/Logos/logo-620-300.png
   metroTileShortName: Hololens Application
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
-  metroWideTileShowName: 0
+  metroWideTileShowName: 1
   metroSupportStreamingInstall: 0
   metroLastRequiredScene: 0
   metroDefaultTileSize: 1
   metroTileForegroundText: 2
-  metroTileBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21568628, a: 0}
-  metroSplashScreenBackgroundColor: {r: 0.12941177, g: 0.17254902, b: 0.21568628, a: 1}
+  metroTileBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  metroSplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 0}
   metroSplashScreenUseBackgroundColor: 0
   platformCapabilities:
     WindowsStoreApps:

@@ -65,3 +65,17 @@ MonoBehaviour:
       id: 0
       description: None
       axisConstraint: 0
+  - localizationKey: 
+    keyword: Move
+    keyCode: 0
+    action:
+      id: 0
+      description: None
+      axisConstraint: 0
+  - localizationKey: 
+    keyword: Place
+    keyCode: 0
+    action:
+      id: 0
+      description: None
+      axisConstraint: 0

@@ -85,7 +85,7 @@ public class PointGenerator : MonoBehaviour
                     {
                         GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                         cube.transform.position = hit.point;
-                        cube.transform.localScale = new Vector3(0.05f, 0.05f, 0.5f);
+                        cube.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
                         cube.GetComponent<Renderer>().material.color = new Color32((byte)(p.color >> 16), (byte)(p.color >> 8), (byte)p.color, 255);
 						createdPoints.Add(cube);
                     }
