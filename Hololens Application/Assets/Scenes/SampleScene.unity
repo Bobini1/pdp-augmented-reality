@@ -457,18 +457,6 @@ MonoBehaviour:
     response:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 784072585}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
         - m_Target: {fileID: 784072583}
           m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
           m_MethodName: set_enabled
@@ -497,18 +485,6 @@ MonoBehaviour:
     response:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 784072585}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 784072583}
           m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
           m_MethodName: set_enabled
@@ -689,6 +665,123 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &762243634
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 784072581}
+    m_Modifications:
+    - target: {fileID: 1537115806125884074, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_text
+      value: Click to display description.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537115806125884074, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_fontSize
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537115806125884074, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537115806125884074, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_textAlignment
+      value: 65535
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537115806125884074, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537115806125884074, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 1537115806125884074, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 8217189920156946147, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8219002942482847169, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_Name
+      value: Tooltip
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.019999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.019999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0017211194
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0018799999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.009734
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222863950748663225, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.17110136
+      objectReference: {fileID: 0}
+    - target: {fileID: 8222863950748663225, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.025641892
+      objectReference: {fileID: 0}
+    - target: {fileID: 8329787883158438443, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: fontSize
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8329787883158438443, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+      propertyPath: toolTipText
+      value: Click to display description.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
 --- !u!1 &784072580 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 09377c78a7c9fb242a6c944163d4cf94, type: 3}
@@ -776,7 +869,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784072580}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5afd5316c63705643b3daba5a6e923bd, type: 3}
   m_Name: 
@@ -834,6 +927,50 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   elasticsManager: {fileID: 0}
+--- !u!114 &784072587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784072580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1410eac1ae94b4d4492a09cc368e152c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states: {fileID: 11400000, guid: 5eac1712038236e4b8ffdb3893804fe1, type: 2}
+  InputActionId: 0
+  isGlobal: 1
+  Dimensions: 1
+  dimensionIndex: 0
+  startDimensionIndex: 0
+  CanSelect: 1
+  CanDeselect: 1
+  voiceCommand: 
+  voiceRequiresFocus: 1
+  profiles:
+  - Target: {fileID: 0}
+    Themes:
+    - {fileID: 0}
+  OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1792399903}
+        m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.UI.ToolTip, Microsoft.MixedReality.Toolkit.SDK
+        m_MethodName: set_ToolTipText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Control cabinet (description)
+          m_BoolArgument: 0
+        m_CallState: 2
+  Events: []
+  resetOnDestroy: 0
+  enabledOnStart: 1
 --- !u!1001 &826165789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1775,6 +1912,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IP: {fileID: 606837222}
+--- !u!114 &1792399903 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8329787883158438443, guid: 247dc8aebe30ca2408e8293a883c75df, type: 3}
+  m_PrefabInstance: {fileID: 762243634}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85b0e186e2c82324b83f3696c29cf697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1820464888
 PrefabInstance:
   m_ObjectHideFlags: 0
