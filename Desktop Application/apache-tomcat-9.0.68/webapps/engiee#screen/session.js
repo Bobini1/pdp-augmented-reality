@@ -193,7 +193,20 @@ function logVideoAudioTrackInfo(localStream) {
     }
 }
 
+function logslider(position) {
+    // position will be between 0 and 100
+    var minp = 0;
+    var maxp = 100;
 
+    // The result should be between 100 an 10000000
+    var minv = Math.log(1);
+    var maxv = Math.log(1000);
+
+    // calculate adjustment factor
+    var scale = (maxv-minv) / (maxp-minp);
+
+    return Math.exp(minv + scale*(position-minp));
+}
 
 function clickHandler(event) {
     let x = event.clientX;
@@ -202,35 +215,50 @@ function clickHandler(event) {
     x = x / event.target.offsetWidth;
     y = y / event.target.offsetHeight;
     let shapeString = "";
-	let shapeColor = 0xffffff;
+	let shapeColor = "Blue";
+    let shapeSize = logslider(document.getElementById('sizeInput').value);
+    let shapeTransparency = document.getElementById('transInput').value;
 	switch (selectedHologramNo){
 		case 1:
 			shapeString = "sphere";
-			shapeColor = 0xff0000;
+			shapeColor = 0x0000ff;
 			break;
 		case 2:
 			shapeString = "sphere";
 			shapeColor = 0x00ff00;
 			break;
 		case 3:
-			shapeString = "sphere";
-			shapeColor = 0x0000ff;
-			break;
-		case 4:
-			shapeString = "cube";
+			shapeString = "cross";
 			shapeColor = 0xff0000;
 			break;
+		case 4:
+			shapeString = "cross";
+			shapeColor = 0x7f00ff;
+			break;
 		case 5:
-			shapeString = "cube";
-			shapeColor = 0x00ff00;
+			shapeString = "exclMark";
+			shapeColor = 0xff0000;
 			break;
 		case 6:
-			shapeString = "cube";
-			shapeColor = 0x0000ff;
+			shapeString = "exclMark";
+			shapeColor = 0xFF7F00;
 			break;
+        case 7:
+            shapeString = "exclMark";
+            shapeColor = 0xffff00;
+            break;
 	}
-    let message = {x: x, y: y, shape: shapeString, color: shapeColor};
+    let message = {x: x, y: y, shape: shapeString, color: shapeColor, size: shapeSize, transparency: shapeTransparency};
     console.log(`XY coordinates of user click: ${x} ${y}`)
     clicksWebsocket.send(JSON.stringify(message))
+}
 
+function removeLast(){
+    let message = {x: 0, y: 0, shape: "removeLast", color: 0, size: 0, transparency: 0};
+    clicksWebsocket.send(JSON.stringify(message))
+}
+
+function removeAll(){
+    let message = {x: 0, y: 0, shape: "removeAll", color: 0, size: 0, transparency: 0};
+    clicksWebsocket.send(JSON.stringify(message))
 }
