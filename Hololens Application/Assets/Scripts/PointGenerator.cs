@@ -12,6 +12,14 @@ using Debug = UnityEngine.Debug;
 public class PointGenerator : MonoBehaviour
 {
     public GameObject IP;
+    public GameObject LastHologram;
+    public GameObject Indicator;
+    public GameObject spherePrefab;
+    public GameObject crossPrefab;
+    public GameObject exclMarkPrefab;
+
+    public Material hologramMaterial;
+
     AddressScript IPscript;
     List<GameObject> createdPoints;
     private class Point
@@ -21,6 +29,9 @@ public class PointGenerator : MonoBehaviour
         // optional shape field
         public string shape;
         public uint color;
+        public float size;
+        public byte transparency;
+
 
         public override string ToString()
         {
@@ -51,6 +62,16 @@ public class PointGenerator : MonoBehaviour
             Debug.Log("Message Received from " + ((WebSocket)sender).Url + ", Data : " + e.Data);
             // parse json
             Point p = JsonUtility.FromJson<Point>(e.Data);
+            if (p.shape == "removeLast")
+            {
+                removeLastPoint();
+                return;
+            }
+            else if (p.shape == "removeAll")
+            {
+                removeAllPoints();
+                return;
+            }
             // calibration
             p.y = 1 - p.y - 0.055f;
             p.x += 0.025f;
@@ -73,7 +94,37 @@ public class PointGenerator : MonoBehaviour
                     if (!Physics.Raycast(ray, out hit)) return;
                     Debug.Log("Hit: " + hit.point);
                     // generate directional indicator
+                    GameObject hologram;
                     if (p.shape == "sphere")
+                    {
+                        hologram = Instantiate(spherePrefab, hit.point, Quaternion.LookRotation(Camera.main.transform.forward));
+                    }
+                    else if (p.shape == "cross")
+                    {
+                        hologram = Instantiate(crossPrefab, hit.point, Quaternion.LookRotation(Camera.main.transform.forward));
+                    }
+                    else
+                    {
+                        hologram = Instantiate(exclMarkPrefab, hit.point, Quaternion.LookRotation(Camera.main.transform.forward));
+                    }
+
+                    var scale = p.size / 100;
+                    //hologram.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 2; \\For testing
+                    hologram.transform.localScale = new Vector3(scale, scale, scale);
+                    Color32 hologramColor = new Color32((byte)(p.color >> 16), (byte)(p.color >> 8), (byte)p.color, p.transparency);
+
+                    foreach (var rend in hologram.GetComponentsInChildren<Renderer>(true))
+                    {
+                        rend.material = hologramMaterial;
+                        rend.material.color = hologramColor;
+
+                    }
+                    createdPoints.Add(hologram);
+
+                    LastHologram.transform.position = hologram.transform.position;
+                    Indicator.SetActive(true);
+
+                    /*if (p.shape == "sphere")
                     {
                         GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
                         sphere.transform.position = hit.point;
@@ -89,6 +140,7 @@ public class PointGenerator : MonoBehaviour
                         cube.GetComponent<Renderer>().material.color = new Color32((byte)(p.color >> 16), (byte)(p.color >> 8), (byte)p.color, 255);
 						createdPoints.Add(cube);
                     }
+                    */
                 });
             }
             catch (Exception ex)
@@ -106,7 +158,11 @@ public class PointGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            GameObject exclMark =  Instantiate(exclMarkPrefab);
+            
+        }
     }
 	
 	public void removeLastPoint()
@@ -115,17 +171,26 @@ public class PointGenerator : MonoBehaviour
 		{
 			Destroy(createdPoints.Last());
             createdPoints.RemoveAt(createdPoints.Count - 1);
-
         }
-	}
+        if (createdPoints.Any())
+        {
+            LastHologram.transform.position = createdPoints.Last().transform.position;
+        }
+        else
+        {
+            Indicator.SetActive(false);
+        }
+
+    }
 	
 	public void removeAllPoints()
 	{
-		foreach(GameObject point in createdPoints)
+        foreach (GameObject point in createdPoints)
 		{
 			Destroy(point);
 		}
         createdPoints.Clear();
+        Indicator.SetActive(false);
 
     }
 }

@@ -11,19 +11,28 @@
 <div id="video-container" onclick="menuHide()">
   <video id="video" onclick="clickHandler(event)" poster="monitor.png" autoplay></video>
 </div>
+<div class="sizeSlider">
+  <input type="range" min="1" max="100" value="5" class="slider" id="sizeInput">
+</div>
+<div class="transparencySlider">
+  <input type="range" min="1" max="255" value="127" class="slider" id="transInput">
+</div>
+<button onclick="removeLast()">Remove Last</button>
+<button onclick="removeAll()">Remove All</button>
 <div class="action">
   <div class="profile" onclick="menuToggle()">
-    <img id="selectedHolo" src="redSphere.png">
+    <img id="selectedHolo" src="blueSphere.png">
   </div>
   <div class="menu">
     <h3>Choose Hologram</h3>
     <ul>
-      <li onclick="changeObject(1)"><img id="holo1" src="redSphere.png"></li>
+      <li onclick="changeObject(1)"><img id="holo1" src="blueSphere.png"></li>
       <li onclick="changeObject(2)"><img id="holo2" src="greenSphere.png"></li>
-      <li onclick="changeObject(3)"><img id="holo3" src="blueSphere.png"></li>
-      <li onclick="changeObject(4)"><img id="holo4" src="redCube.png"></li>
-      <li onclick="changeObject(5)"><img id="holo5" src="greenCube.png"></li>
-      <li onclick="changeObject(6)"><img id="holo6" src="blueCube.png"></li>
+      <li onclick="changeObject(3)"><img id="holo3" src="redCross.png"></li>
+      <li onclick="changeObject(4)"><img id="holo4" src="purpleCross.png"></li>
+      <li onclick="changeObject(5)"><img id="holo5" src="redExcl.png"></li>
+      <li onclick="changeObject(6)"><img id="holo6" src="orangeExcl.png"></li>
+      <li onclick="changeObject(7)"><img id="holo7" src="yellowExcl.png"></li>
     </ul>
   </div>
 </div>
