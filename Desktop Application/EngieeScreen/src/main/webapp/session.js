@@ -208,48 +208,40 @@ function logslider(position) {
     return Math.exp(minv + scale*(position-minp));
 }
 
+function selectedShapeIdToString(){
+    switch (selectedHologramNo){
+        case 1:
+            return "sphere";
+        case 2:
+            return "cross"
+        case 3:
+            return "exclMark";
+        case 4:
+            return "leftArrow";
+        case 5:
+            return "rightArrow";
+        default:
+            return "error";
+    }
+}
+
 function clickHandler(event) {
     let x = event.clientX;
     let y = event.clientY;
     // normalize x and y to 0-1 of offsetWidth and offsetHeight
     x = x / event.target.offsetWidth;
     y = y / event.target.offsetHeight;
-    let shapeString = "";
-	let shapeColor = "Blue";
+    let shapeString = selectedShapeIdToString();
+
+    let colorInputVal = document.getElementById('colorInput').value;
+	let shapeColor = Number(colorInputVal.replace('#', '0x'));
+
     let shapeSize = logslider(document.getElementById('sizeInput').value);
     let shapeTransparency = document.getElementById('transInput').value;
-	switch (selectedHologramNo){
-		case 1:
-			shapeString = "sphere";
-			shapeColor = 0x0000ff;
-			break;
-		case 2:
-			shapeString = "sphere";
-			shapeColor = 0x00ff00;
-			break;
-		case 3:
-			shapeString = "cross";
-			shapeColor = 0xff0000;
-			break;
-		case 4:
-			shapeString = "cross";
-			shapeColor = 0x7f00ff;
-			break;
-		case 5:
-			shapeString = "exclMark";
-			shapeColor = 0xff0000;
-			break;
-		case 6:
-			shapeString = "exclMark";
-			shapeColor = 0xFF7F00;
-			break;
-        case 7:
-            shapeString = "exclMark";
-            shapeColor = 0xffff00;
-            break;
-	}
+
     let message = {x: x, y: y, shape: shapeString, color: shapeColor, size: shapeSize, transparency: shapeTransparency};
     console.log(`XY coordinates of user click: ${x} ${y}`)
+    console.log(message);
     clicksWebsocket.send(JSON.stringify(message))
 }
 

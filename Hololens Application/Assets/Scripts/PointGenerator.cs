@@ -14,14 +14,20 @@ public class PointGenerator : MonoBehaviour
     public GameObject IP;
     public GameObject LastHologram;
     public GameObject Indicator;
+
     public GameObject spherePrefab;
     public GameObject crossPrefab;
     public GameObject exclMarkPrefab;
+    public GameObject LeftArrowPrefab;
+    public GameObject RightArrowPrefab;
 
     public Material hologramMaterial;
 
+    bool arrowHidden = false;
+
     AddressScript IPscript;
     List<GameObject> createdPoints;
+
     private class Point
     {
         public float x;
@@ -48,6 +54,7 @@ public class PointGenerator : MonoBehaviour
         }
     }
     
+
     WebSocket ws;
     // Start is called before the first frame update
     void Start()
@@ -62,16 +69,6 @@ public class PointGenerator : MonoBehaviour
             Debug.Log("Message Received from " + ((WebSocket)sender).Url + ", Data : " + e.Data);
             // parse json
             Point p = JsonUtility.FromJson<Point>(e.Data);
-            if (p.shape == "removeLast")
-            {
-                removeLastPoint();
-                return;
-            }
-            else if (p.shape == "removeAll")
-            {
-                removeAllPoints();
-                return;
-            }
             // calibration
             p.y = 1 - p.y - 0.055f;
             p.x += 0.025f;
@@ -84,10 +81,29 @@ public class PointGenerator : MonoBehaviour
             {
                 ExecuteOnMainThread.RunOnMainThread.Enqueue(() =>
                 {
+                    // remove holograms if message said so
+                    if (p.shape == "removeLast")
+                    {
+                        removeLastPoint();
+                        return;
+                    }
+                    else if (p.shape == "removeAll")
+                    {
+                        foreach (GameObject point in createdPoints)
+                        {
+                            Destroy(point);
+                        }
+                        createdPoints.Clear();
+                        Indicator.SetActive(false);
+                        return;
+                    }
+
+
                     var x = (int)(p.x * Screen.width);
                     var y = (int)(p.y * Screen.height);
                     ray = camera.ScreenPointToRay(new Vector3(x, y, 0));
                     // adjust ray angle
+                    
                     Debug.Log("ray: " + ray);
                     // get hit point on a wall
                     RaycastHit hit;
@@ -102,6 +118,14 @@ public class PointGenerator : MonoBehaviour
                     else if (p.shape == "cross")
                     {
                         hologram = Instantiate(crossPrefab, hit.point, Quaternion.LookRotation(Camera.main.transform.forward));
+                    }
+                    else if (p.shape == "leftArrow")
+                    {
+                        hologram = Instantiate(LeftArrowPrefab, hit.point, Quaternion.LookRotation(Camera.main.transform.forward));
+                    }
+                    else if (p.shape == "rightArrow")
+                    {
+                        hologram = Instantiate(RightArrowPrefab, hit.point, Quaternion.LookRotation(Camera.main.transform.forward));
                     }
                     else
                     {
@@ -122,7 +146,8 @@ public class PointGenerator : MonoBehaviour
                     createdPoints.Add(hologram);
 
                     LastHologram.transform.position = hologram.transform.position;
-                    Indicator.SetActive(true);
+                    if(arrowHidden == false)
+                        Indicator.SetActive(true);
 
                     /*if (p.shape == "sphere")
                     {
@@ -158,18 +183,14 @@ public class PointGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            GameObject exclMark =  Instantiate(exclMarkPrefab);
-            
-        }
+
     }
 	
 	public void removeLastPoint()
 	{
 		if(createdPoints.Any())
 		{
-			Destroy(createdPoints.Last());
+            Destroy(createdPoints.Last());
             createdPoints.RemoveAt(createdPoints.Count - 1);
         }
         if (createdPoints.Any())
@@ -193,4 +214,15 @@ public class PointGenerator : MonoBehaviour
         Indicator.SetActive(false);
 
     }
+
+    public void hideArrow()
+    {
+        arrowHidden = true;
+    }
+
+    public void showArrow()
+    {
+        arrowHidden = false;
+    }
+
 }
