@@ -35,7 +35,7 @@
 	padding: 10px 20px;
 	background: #fff;
 	width: 60px;
-	box-sizing: 0 5px 25px rgba(0,0,0,0.1);
+	box-sizing: content-box;
 	border-radius: 15px;
 	transition: 0.5s;
 	visibility: hidden;
@@ -83,5 +83,61 @@
 }
 .action .menu ul li:hover img
 {
-	opacity: 1;
+	width: 100%;
+}
+
+.colorSelector{
+	width: 60px;
+}
+
+.button-24 {
+	background: #FF4742;
+	border: 1px solid #FF4742;
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+	font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 16px;
+	min-height: 30px;
+	outline: 0;
+	text-align: center;
+	text-rendering: geometricprecision;
+	text-transform: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+	background-color: initial;
+	background-position: 0 0;
+	color: #FF4742;
+}
+
+.button-24:active {
+	opacity: .5;
+}
+
+.rangeLabel{
+	color: #FFFFFF
+}
+
+.sliderDiv{
+	margin-left: 10px;
+	margin-top: 2px;
+}
+
+.settings{
+	position: fixed;
+	top: 10px;
+	left: 10px;
 }
