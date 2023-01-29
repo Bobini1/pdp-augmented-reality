@@ -358,7 +358,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &190423374
 GameObject:
@@ -1133,51 +1133,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e247aa0936dbcbf4b8cb0ab9c2a0bb5b, type: 3}
---- !u!1 &424106752
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 424106754}
-  - component: {fileID: 424106753}
-  m_Layer: 0
-  m_Name: QRCodesManagerHandler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &424106753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424106752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 976fb4b1cee077c4fa442a31206e14be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 802654701}
---- !u!4 &424106754
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 424106752}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.021016106, y: 0.13981095, z: 0.4050747}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &426698794 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8cec8d9243a415d44b016b435be164a2, type: 3}
@@ -1632,18 +1587,6 @@ MonoBehaviour:
     response:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 802654701}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
         - m_Target: {fileID: 802654703}
           m_TargetAssemblyTypeName: Microsoft.MixedReality.SampleQRCodes.QRCodesManager,
             Microsoft.MixedReality.SampleQRCodes
@@ -1674,18 +1617,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 802654701}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 802654702}
           m_TargetAssemblyTypeName: Microsoft.MixedReality.SampleQRCodes.QRCodesVisualizer,
             Microsoft.MixedReality.SampleQRCodes
@@ -1697,7 +1628,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
   persistentKeywords: 0
   speechConfirmationTooltipPrefab: {fileID: 8046114618238072051, guid: 271778f6c957b524981067a81d238394, type: 3}
@@ -2524,17 +2455,12 @@ PrefabInstance:
       objectReference: {fileID: 190423374}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f34f8e25b62902540bb78d891cc3f492, type: 3}
---- !u!1 &802654701 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2079062873306329133, guid: f34f8e25b62902540bb78d891cc3f492, type: 3}
-  m_PrefabInstance: {fileID: 802654700}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &802654702 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5731539863259288648, guid: f34f8e25b62902540bb78d891cc3f492, type: 3}
   m_PrefabInstance: {fileID: 802654700}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802654701}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cb6bfab5bb21b7247a0c44cc9cb5836e, type: 3}
@@ -2545,7 +2471,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4908586973252628864, guid: f34f8e25b62902540bb78d891cc3f492, type: 3}
   m_PrefabInstance: {fileID: 802654700}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802654701}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4ea48656e495f24c8bcbe918b647e42, type: 3}

@@ -104,7 +104,7 @@ namespace Microsoft.MixedReality.SampleQRCodes
                         qrCodeObject.GetComponent<SpatialGraphNodeTracker>().Id = action.qrCode.SpatialGraphNodeId;
                         qrCodeObject.GetComponent<QRCode>().qrCode = action.qrCode;
                         qrCodesObjectsList.Add(action.qrCode.Id, qrCodeObject);
-                        if(qrCodeObject.GetComponent<QRCode>().qrCode.Data.Equals("control cabinet 1"))
+                        if (qrCodeObject.GetComponent<QRCode>().qrCode.Data.Equals("control cabinet 1"))
                         {
                             controlCabinet1.SetActive(true);
                             confirmation.Play();
